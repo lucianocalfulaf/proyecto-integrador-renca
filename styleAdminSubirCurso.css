@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal; /* Normal, no bold */
+    font-weight: 00; /* Peso de la fuente */
+    src: url('Tipografía/Poppins-Bold.ttf') format('truetype'); /* Ruta del archivo de la fuente */
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: italic; /* Itálica */
+    font-weight: bold; /* Negrita */
+    src: url('Tipografía/Poppins-ExtraBoldItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: italic; /* Itálica */
+    src: url('Tipografía/Poppins-Italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: italic; /* Itálica */
+    font-weight: 500; /* Peso medio */
+    src: url('Tipografía/Poppins-MediumItalic.ttf') format('truetype');
+}
+
+#video {
+    margin-top: 50px;
+}
+.btn-container {
+    margin-top: 10px;
+}
+#todo {
+    margin: 20px;
+    background-color: #f0f0f0; 
+    padding: 10px; 
+}
+
+#h4 {
+    margin-top: 10px;
+    margin-left: 10px;
+}
