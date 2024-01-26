@@ -9,13 +9,20 @@
     <link href='sidebar.css' rel='stylesheet'>
     <link href="mis_cursos.css" rel="stylesheet">
 
+    <!-- css landing page y fonts -->
+        <link rel="stylesheet" href="../landing-page.css">
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+
     <title>Cursos</title>
 </head>
 <body id="body-pd">
     <header class="header" id="header">
         <div class="header_toggle"> <i class='bx bx-menu' id="header-toggle"></i> </div>
         <div class="header_img"> <img src="https://i.imgur.com/hczKIze.jpg" alt=""></div>
-
+        
         <nav class="navbar navbar-expand-lg bg-body-tertiary bg-primary">
             <div class="container-fluid">
                 <div class="row">
@@ -44,32 +51,32 @@
 
     </header>
 
+        <!-- Prueba codigo navbar -->
+        <nav class="navbar  bg-body-tertiary bg-primary container-fluid" id="navbar">
 
-
-        <nav>
-            <div class="container text-center ">
-                <div class="row">
-                    <div class="col text-start">
-                    </div>
-                    <div class="col">
-                        <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">Search</button>
-                        </form>
-                    </div>       
-                    <div class="col text-end">
-                        <span class="navbar-text">Inicio de sesion</span>
-                    </div>
+            <div class="logo-container">
+                <img src="../imagenes-landing-page/logomunicipal.png" alt="Logo Municipal" class="logo-municipal">
+                <img src="../imagenes-landing-page/renca.png" alt="Renca" class="logo-municipal-2">
+                <img src="../imagenes-landing-page/favicon.png" alt="favicon" class="logo-municipal-3">
             </div>
+
+            <div class="explorar">
+
+                <h3 class="menu-hamburguesa">Mis Cursos</h3>
+
+            </div>
+            
         </nav>
-        <h1 class="text-center">Cursos</h1>
+<!-- Fin Prueba codigo navbar -->
+<br>
+        <h1 class="text-center" style="margin-top: 10px;">Cursos</h1>
         <div class="container text-center">
             <div class="row">
                 <div class="col-4">
                     <div class="card" style="width: 18rem;">
                         <img src="img/curso.jpg" class="card-img-top" alt="...">
                         <div class="card-body">                        
-                          <a href="#" ><h5 class="card-title">Curso Desarrollo Web</h5></a>
+                          <a href="detalle_curso.html" ><h5 class="card-title">Curso Desarrollo Web</h5></a>
                         </div>
                       </div>
                 </div>

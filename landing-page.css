@@ -19,7 +19,7 @@ body {
 /* Navbar */
 
 /* Encabezado */
-.navbar {
+#navbar {
     background: linear-gradient(
         to right,
         /* rgb(257, 87, 30) 16.7%,
