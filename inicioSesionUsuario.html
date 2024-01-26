@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar Sesión</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="styleSesionUsuario.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    </head>
+    
+    <body>
+      
+    <div>
+      <form class="formulario">
+          <h3 class="titulo" >Iniciar Sesión</h3>
+        <br>
+          <img src="img-registro\Logo CV-Renca.png" alt="Iniciar Sesion Imagen" class="logo">
+        <br>
+        <table>
+          <tbody>
+            <tr>
+              <td>
+                <input placeholder="Nombre usuario:" type="text" id="name" name="name" required>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input placeholder="Contraseña:" type="password"  id="password" name="password" required>
+              </td>
+            </tbody>
+          </table>
+          
+          <br>
+            <button type="btn" class="botonRegister" onclick="login()">Iniciar Sesión</button>
+          <br>
+          <div class="mt-3 text-center">
+            <a href="#" onclick="forgotPassword()">¿Olvidó su contraseña?</a>
+          </div>
+          <div class="mt-2 text-center">
+            <a href="#" onclick="register()">¿No está registrado? Regístrese</a>
+          </div>
+          <div class="mt-2 text-center">
+            <a href="#" onclick="adminLogin()">¿Es administrador? Ingresar perfil administrador</a>
+    
+       
+      </form>
+  </div>
+    
+  
+      <script>
+          function login() {
+              var username = document.getElementById('username').value;
+              var password = document.getElementById('password').value;
+  
+              // Aquí puedes realizar la lógica de autenticación, por ejemplo, enviar los datos al servidor.
+              // Este es solo un ejemplo básico del lado del cliente.
+              if (username === 'usuario' && password === 'contraseña') {
+                  alert('Inicio de sesión exitoso!');
+              } else {
+                  alert('Nombre de usuario o contraseña incorrectos. Vuelve a intentarlo.');
+              }
+          }
+  
+          function forgotPassword() {
+              // Implementa la lógica para recuperar contraseña, por ejemplo, enviar un correo electrónico.
+              alert('Funcionalidad de recuperación de contraseña no implementada.');
+          }
+  
+          function register() {
+              // Implementa la lógica para redirigir a la página de registro.
+              alert('Redirigir a la página de registro.');
+          }
+  
+          function adminLogin() {
+              // Implementa la lógica para el inicio de sesión del administrador.
+              alert('Funcionalidad de inicio de sesión del administrador no implementada.');
+          }
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+          crossorigin="anonymous"></script>
+       
+    </body>
+    
+    </html>
