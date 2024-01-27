@@ -57,10 +57,10 @@
         </div>
         <div class="card-content">
             <h2>NOMBRE</h2>
-            <p>RUTA QUE ESTA HACIENDO</p><br>
+            <p>RUTA QUE ESTA HACIENDO</p>
             <div class="progress">
                 <div class="progress__fill"></div>
-                <span class="progress__text">25%</span> 
+                <span class="progress__text">0%</span>
             </div>            
             <a>CORREO ELECTRONICO</a><br>
             <a>DIRECCION</a><br>
@@ -68,66 +68,41 @@
             <a>A</a>
         </div>
     </div>
-    <div class="card">
-        <h2><strong>CURSOS<br>INSCRITOS</strong></h2>
-        <p>This is the content of Card 2.</p>
+    <div class="card2 card-with-image2">
+        <div class="card-image-container2">
+            <img src="img/🦆 icon _book_.png" alt="Card Image">
+        </div>
+        <div class="card-content2">
+            <h2><strong>CURSOS<br>INSCRITOS</strong></h2><br>
+             <p>curso a</p>
+            <div class="progress2">
+                <div class="progress__fill2"></div>
+                <span class="progress__text2">0%</span> 
+            </div>
+        </div>
     </div>
-    <div class="card">
-        <h2><strong>CURSOS<br>APROBADOS</strong></h2>
-        <p>This is the content of Card 3.</p>
-    </div>
-    <div class="card">
-        <h2><strong>CERTIFICADOS<br>OBTENIDOS</strong><br></h2>
-        <p>This is the content of Card 4.</p>
-    </div>
+    <div class="card3 card-with-image3">
+        <div class="card-image-container3">
+            <img src="img/🦆 icon _circle check_.png" alt="Card Image">
+        </div>
+        <div class="card-content3">
+            <h2><strong>CURSOS<br>APROBADOS</strong></h2><br>
+            <p><strong>CURSO A</strong></p>
+        </div>
+    </div>   
+    <div class="card4 card-with-image4">
+        <div class="card-image-container4">
+            <img src="img/Vector.png" alt="Card Image">
+        </div>
+        <div class="card-content4">
+            <h2><strong>CERTIFICADOS<br>OBTENIDOS</strong></h2><br>
+            <p><strong>Ciberseguridad</strong></p>
+        </div>
+    </div>    
 </div>
 
-<script>
-const body = document.querySelector("body"),
-      nav = document.querySelector("nav"),
-      modeToggle = document.querySelector(".dark-light"),
-      searchToggle = document.querySelector(".searchToggle"),
-      sidebarOpen = document.querySelector(".sidebarOpen"),
-      siderbarClose = document.querySelector(".siderbarClose");
-
-      let getMode = localStorage.getItem("mode");
-          if(getMode && getMode === "dark-mode"){
-            body.classList.add("dark");
-          }
-
-// js code to toggle dark and light mode
-      modeToggle.addEventListener("click" , () =>{
-        modeToggle.classList.toggle("active");
-        body.classList.toggle("dark");
-
-        // js code to keep user selected mode even page refresh or file reopen
-        if(!body.classList.contains("dark")){
-            localStorage.setItem("mode" , "light-mode");
-        }else{
-            localStorage.setItem("mode" , "dark-mode");
-        }
-      });
-
-// js code to toggle search box
-        searchToggle.addEventListener("click" , () =>{
-        searchToggle.classList.toggle("active");
-      });
- 
-      
-//   js code to toggle sidebar
-sidebarOpen.addEventListener("click" , () =>{
-    nav.classList.add("active");
-});
-
-body.addEventListener("click" , e =>{
-    let clickedElm = e.target;
-
-    if(!clickedElm.classList.contains("sidebarOpen") && !clickedElm.classList.contains("menu")){
-        nav.classList.remove("active");
-    }
-});
-
-</script>
-
+<script src="script-de-navbar.js"></script>
+<script src="script-barra-de-progreso-carta1.js"></script>
+<script src="script-barra-de-progreso-carta2.js"></script>
 </body>
 </html>

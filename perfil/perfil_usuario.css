@@ -289,7 +289,6 @@ body.dark .search-field i{
         margin-top: 20px;
     }
 }
-/* Add this code in your existing CSS or perfil_usuario.css */
 .card-container {
     display: flex;
     flex-wrap: wrap; /* Allow cards to wrap to the next line on smaller screens */
@@ -297,7 +296,7 @@ body.dark .search-field i{
     align-items: center;
     padding: 1px;
     height: 90%;
-    background-color: #d32626; /* Set your desired background color */
+    background-color: #ffffff; /* Set your desired background color */
 }
 
 .card {
@@ -316,7 +315,7 @@ body.dark .search-field i{
     position: relative;
     height: 500px; /* Set the height of the card with image */
     width: 400px; /* Set the width of the card with image */
-    border: solid rgb(51, 153, 65);
+    border: solid rgb(255, 255, 255);
 }
 
 .card-image-container {
@@ -332,7 +331,7 @@ body.dark .search-field i{
     height: 100%;
     object-fit: cover;
     border-radius: 50%;
-    border: 2px solid #00C6AB; /* Set your desired border color */
+    border: 2px solid #000000; /* Set your desired border color */
 }
 
 .card h2 {
@@ -355,22 +354,219 @@ body.dark .search-field i{
         width: 100%; /* Full width for cards with images on smaller screens */
     }
 }
-.progress{
+.progress {
     position: relative;
     width: 210px;
     height: 30px;
     background: #9cbab4;
     border-radius: 5px;
     overflow: hidden;
+    margin: 0 auto; /* Agrega esta línea para centrar la barra de progreso horizontalmente */
 }
 .progress__fill{
-    width: 50%;
+    width: 0%;
     height: 100%;
     background: #00C6AB;
+    transition: all 0.2s;
 }
 .progress__text {
     position: absolute;
-    top: 0;
+    top: 50%;
     right: 5px;
+    transform: translateY(-50%);
+    font: bold 14px 'Quicksand', sans-serif;
+    color: #ffffff;
+}
+.card2 {
+    flex: 1;
+    max-width: 400px; /* Set the width of each card */
+    height: 500px; /* Set the height of each card */
+    padding: 20px; /* Add padding to the cards */
+    margin: 10px; /* Adjust the margin around each card */
+    background-color: #ffffff; /* Set your desired card background color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.767);
+    border-radius: 8px;
+    text-align: center;
+}
 
+.card2.card-with-image2 {
+    position: relative;
+    height: 500px; /* Set the height of the card with image */
+    width: 400px; /* Set the width of the card with image */
+    border: solid rgb(255, 255, 255)
+}
+
+.card-image-container2 {
+    overflow: hidden;
+    display: inline-flex; /* Para que el contenedor se ajuste al tamaño de la imagen */
+    justify-content: center; /* Centrar horizontalmente la imagen */
+    align-items: center; /* Centrar verticalmente la imagen */
+    width: 50px;
+    height: 50px;
+}
+
+
+.card-image-container2 img {
+    max-width: 100%; /* Make sure the image doesn't overflow its container */
+    max-height: 100%; /* Make sure the image doesn't overflow its container */
+    object-fit: cover;
+    border: 2px solid #ffffff; /* Set your desired border color */
+}
+
+.card2 h2 {
+    color: #333; /* Set your desired heading color */
+}
+
+.card2 p {
+    color: #666; /* Set your desired paragraph color */
+    font-size: 14px;
+
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .card2 {
+        flex: 1 0 100%; /* Full width for smaller screens */
+        margin: 10px 0; /* Adjust the margin for smaller screens */
+    }
+
+    .card2.card-with-image {
+        width: 100%; /* Full width for cards with images on smaller screens */
+    }
+}
+.progress2 {
+    position: relative;
+    width: 210px;
+    height: 30px;
+    background: #9cbab4;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 0 auto;;
+}
+
+.progress__fill2 {
+    width: 0%;
+    height: 100%;
+    background: #00C6AB;
+    transition: all 0.2s;
+}
+
+.progress__text2 {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    font: bold 14px 'Quicksand', sans-serif;
+    color: #ffffff;
+}
+.card3 {
+    flex: 1;
+    max-width: 400px; /* Set the width of each card */
+    height: 500px; /* Set the height of each card */
+    padding: 20px; /* Add padding to the cards */
+    margin: 10px; /* Adjust the margin around each card */
+    background-color: #ffffff; /* Set your desired card background color */
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.card3.card-with-image3 {
+    position: relative;
+    height: 500px; /* Set the height of the card with image */
+    width: 400px; /* Set the width of the card with image */
+    border: solid rgb(255, 255, 255)
+}
+
+.card-image-container3 {
+    width: 50px; /* Define el ancho del contenedor de imagen */
+    height: 50px; /* Define la altura del contenedor de imagen */
+    margin: 0 auto; /* Centra horizontalmente el contenedor */
+    border-radius: 50%; /* Hace que el contenedor sea circular */
+    overflow: hidden; /* Oculta cualquier parte de la imagen que se salga del contenedor circular */
+}
+
+.card-image-container3 img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50px;
+    border: 2px solid #ffffff; /* Set your desired border color */
+}
+
+.card3 h2 {
+    color: #333; /* Set your desired heading color */
+}
+
+.card3 p {
+    color: #666; /* Set your desired paragraph color */
+    font-size: 14px;
+
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .card3 {
+        flex: 1 0 100%; /* Full width for smaller screens */
+        margin: 10px 0; /* Adjust the margin for smaller screens */
+    }
+
+    .card3.card-with-image3 {
+        width: 100%; /* Full width for cards with images on smaller screens */
+    }
+}
+.card4 {
+    flex: 1;
+    max-width: 400px; /* Set the width of each card */
+    height: 500px; /* Set the height of each card */
+    padding: 20px; /* Add padding to the cards */
+    margin: 10px; /* Adjust the margin around each card */
+    background-color: #ffffff; /* Set your desired card background color */
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.card4.card-with-image4 {
+    position: relative;
+    height: 500px; /* Set the height of the card with image */
+    width: 400px; /* Set the width of the card with image */
+    border: solid rgb(255, 255, 255);
+}
+
+.card-image-container4 {
+    width: 80px; /* Define el ancho del contenedor de imagen */
+    height: 50px; /* Define la altura del contenedor de imagen */
+    margin: 0 auto; /* Centra horizontalmente el contenedor */
+    border-radius: 100%; /* Hace que el contenedor sea circular */ /* Oculta cualquier parte de la imagen que se salga del contenedor circular */
+}
+
+.card-image-container4 img {
+    width: 40px;
+    height: 50px;
+    object-fit: cover;
+    border: 2px solid #ffffff; /* Set your desired border color */
+}
+
+.card4 h2 {
+    color: #333; /* Set your desired heading color */
+}
+
+.card4 p {
+    color: #666; /* Set your desired paragraph color */
+    font-size: 14px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .card4 {
+        flex: 1 0 100%; /* Full width for smaller screens */
+        margin: 10px 0; /* Adjust the margin for smaller screens */
+    }
+
+    .card4.card-with-image4 {
+        width: 100%; /* Full width for cards with images on smaller screens */
+    }
 }
