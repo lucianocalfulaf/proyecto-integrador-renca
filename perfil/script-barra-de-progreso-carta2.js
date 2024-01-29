@@ -7,4 +7,4 @@ function updateProgressBar(progressBar, value) {
   const myProgressBar2 = document.querySelector(".progress2");
   
   /* Example */
-  updateProgressBar(myProgressBar2, 40)
+  updateProgressBar(myProgressBar2, 50)
