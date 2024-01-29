@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("/imagenes-landing-page-admin/favicon.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 20%;
+    background-attachment: fixed;
+}
+
+
+/* Navbar */
+
+.header {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-content: center;
+    justify-items: center;
+    padding: 2rem;
+    width: 100%;
+    background-color:#009A88;
+}
+
+/* Logo */
+.logo {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-column: 5 / 6;
+    position: relative;
+    right: 5%;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+.logo-renca {
+    max-width: 10rem;
+}
+
+/* Navbar */
+.nav {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 5%;
+    display: none;
+}
+
+.nav-items {
+    display: flex;
+    list-style-type: none;
+    gap: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-items li a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 300ms ease-out;
+}
+
+.nav-item a:hover {
+    transform: scale(1.1);
+    transition: 300ms ease-in;
+    color:  #E68E0C;
+    font-weight: bolder;
+}
+
+.visiblenav {
+    transition:linear;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+    width: 15%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #009A88;
+    padding: 2rem;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    opacity: 1;
+}
+
+.visiblenav .nav-items {
+    flex-direction: column;
+    position: absolute;
+    top: 5%;
+    gap: 3rem;
+}
+
+#power {
+    width: 25px;
+    height: auto;
+    margin-left: 7px;
+    transform: 300ms ease-out;
+}
+
+.fa-power-off:hover {
+    color: #E68E0C;
+    transition: 300ms ease-in;
+}
+
+.close-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    width: 90px;
+    height: 30px;
+    position: absolute;
+    bottom: 5%;
+    color: white;
+    background-color: #05b9a4;
+    opacity: .9;
+    cursor: pointer;
+    border: 3px solid orange;
+    border-radius: 5px;
+    transition: 300ms ease-out;
+}
+
+.close-button:hover {
+    background-color:  #E68E0C;
+    transform: scale(1.1);
+    transition: .3s ease-in-out;
+    font-weight: bolder;
+}
+
+.close-button:active {
+    background-color: #009A88;
+    transform: scale(1.1);
+    border: 3px solid orange;
+}
+
+.fa-xmark {
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
+    margin-top: .5px;
+}
+
+
+/* Menú Hamburguesa */
+
+/* Barras */
+
+#bars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transform: scale(2);
+    transition: 300ms ease-out;
+    color: #fff;
+}
+
+#bars:hover {
+    transform: scale(2.3);
+    transition: 300ms ease-in;
+    color: #E68E0C;
+}
+/* .bars__menu {
+    width: 30px;
+    height: 13px;
+    position: relative;
+    left: 5%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.bars__menu span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    margin-top: 6px;  
+    transform-origin: 0px 100%;  
+    transition: all 300ms;
+} */
+
+
+/* Animación */
+
+/* .activeline1__bars-menu {
+    transform: rotate(45deg) translate(-2px, 1px);
+}
+
+.activeline2__bars-menu {
+    opacity: 0;
+    margin-left: -30px;
+}
+
+.activeline3__bars-menu {
+    transform: rotate(-45deg) translate(-4px, 2px);
+} */
