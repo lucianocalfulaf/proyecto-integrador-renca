@@ -16,24 +16,20 @@
 
     <!-- Navbar -->
     <header class="header">
-
-        <!-- Menú Hamburguesa -->
-        <!-- <div class="bars__menu">
-            <span class="line1__bars-menu"></span>
-            <span class="line2__bars-menu"></span>
-            <span class="line3__bars-menu"></span>
-        </div> -->
+        
         <i class="fa-solid fa-bars" id="bars"></i>
         
         <nav class="nav" id="nav">
+            <button class="close-button"><i class="fa-solid fa-xmark" style="color: #ffffff;"></i></button>
             <ul class="nav-items">
                 <li class="nav-item"><a href="#" class="link-item">Inicio</a></li>
                 <li class="nav-item"><a href="#" class="link-item">Perfiles</a></li>
                 <li class="nav-item"><a href="#" class="link-item">Cursos</a></li>
                 <li class="nav-item"><a href="#" class="link-item">Rutas de Aprendizaje</a></li>
                 <li class="nav-item"><a href="#" class="link-item"><span>Cerrar Sesión</span> <i class="fa-solid fa-power-off" id="power"></i></a></li>
-            </ul>
-            <button class="close-button"><span>Cerrar</span> <i class="fa-solid fa-xmark" style="color: #ffffff;"></i></button>
+            </ul>   
+        </nav>
+            
         </nav>
 
         <div class="logo">
@@ -43,6 +39,35 @@
         
         
     </header>
+
+    <!-- Submenú -->
+    <nav class="sub-menu">
+        <ul class="sub-menu-items">
+            <li class="sub-menu-item">
+                <a href="#">Perfiles</a>
+                <ul class="deployment">
+                    <li class="item-deployment"><a href="#">Ver Perfiles</a></li>
+                </ul>
+            </li>
+            <li class="sub-menu-item">
+                <a href="#">Cursos</a>
+                <ul class="deployment">
+                    <li class="item-deployment"><a href="#">Ver Cursos</a></li>
+                    <li class="item-deployment"><a href="#">Subir Cursos</a></li>
+                </ul>
+            </li>
+            <li class="sub-menu-item">
+                <a href="#">Rutas de Aprendizaje</a>
+                <ul class="deployment">
+                    <li class="item-deployment"><a href="#">Ver Rutas De Aprendizaje</a></li>
+                    <li class="item-deployment"><a href="#">Crear Nueva Ruta De Aprendizaje</a></li>
+                </ul>
+            </li>
+            <li class="sub-menu-item">
+                <a href="#">Registrate</a>
+            </li>
+        </ul>
+    </nav>
 
     <!-- Main Content -->
     <main>
