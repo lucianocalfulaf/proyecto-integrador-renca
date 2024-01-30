@@ -162,6 +162,10 @@ body {
     justify-content: center;
 }
 
+.fa-regular {
+    margin-left: 4px;
+}
+
 
 /* Menú Hamburguesa */
 
@@ -227,6 +231,12 @@ body {
 .sub-menu-item {
     transition: 200ms ease-out;
 }
+
+/* .sub-menu-item a {
+    border: 3px solid #E68E0C;
+    border-radius: 5px;
+    background-color: rgba(118, 158, 51, 0.93);
+} */
 
 .sub-menu-item:hover {
     transform: scale(1.1);
