@@ -71,42 +71,68 @@
 <br>
         <h1 class="text-center" style="margin-top: 10px;">Cursos</h1>
         <div class="container text-center">
-
             <div class="app">
-                <input type="text" id="searchInput" placeholder="Filtrar por Curso" />
+                <div class="row">
+                    <div class="col-10">
+                        <input type="text" id="searchInput" placeholder="Filtrar por Curso" />
+                    </div>
+                    <div class="col-2">
+                        <button id="filterButton">Filtros</button>
+
+                        <div id="filterSection" style="display: none;">
+                            <div class="filterOption">
+                                <button class="filterButton">Filtro 1</button>
+                                <select class="filterDropdown">
+                                    <option value="opcion1">Opción 1</option>
+                                    <option value="opcion2">Opción 2</option>
+                                    <!-- Agrega más opciones según sea necesario -->
+                                </select>
+                            </div>
+                        
+                            <div class="filterOption">
+                                <button class="filterButton">Filtro 2</button>
+                                <select class="filterDropdown">
+                                    <option value="opcionA">Opción A</option>
+                                    <option value="opcionB">Opción B</option>
+                                    <!-- Agrega más opciones según sea necesario -->
+                                </select>
+                            </div>
+                            <!-- Agrega más botones de filtro con opciones según sea necesario -->
+                        </div>
+                        </div>
+                    </div>
+                </div>
                 
-            <div class="row">
-                <div class="col-4">
-                    <div class="card" style="width: 18rem;" id="card">
-                        <img src="img/curso.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">                        
-                          <a href="detalle_curso.html" ><h5 class="card-title">Curso Desarrollo Web</h5></a>
+                
+                <div class="row">
+                    <div class="col-4">
+                        <div class="card" style="width: 18rem;" id="card">
+                            <img src="img/curso.jpg" class="card-img-top" style="width: 205px;" alt="...">
+                            <div class="card-body">
+                                <a href="detalle_curso.html" class="course-link"><h5 class="card-title">Curso Desarrollo Web</h5></a>
+                            </div>
                         </div>
-                      </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card" style="width: 18rem;" id="card">
+                            <img src="img/aprendizaje.jpg" class="card-img-top" style="width: 205px;" alt="...">
+                            <div class="card-body">
+                                <a href="detalle_curso.html" class="course-link"><h5 class="card-title">Curso Creative</h5></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card" style="width: 18rem;" id="card">
+                            <img src="img/curso.jpg" class="card-img-top" style="width: 205px;" alt="...">
+                            <div class="card-body">
+                                <a href="detalle_curso.html" class="course-link"><h5 class="card-title">Curso Diseño Mockup</h5></a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
                 </div>
-                <div class="col-4">
-                    <div class="card" style="width: 18rem;" id="card">
-                        <img src="img/aprendizaje.jpg" class="card-img-top" style="width: 205px;" alt="...">
-                        <div class="card-body">                        
-                          <a href="#" ><h5 class="card-title">Curso Creative</h5></a>
-                        </div>
-                      </div>
-                </div>  
-                <div class="col-4">
-                    <div class="card" style="width: 18rem;" id="card">
-                        <img src="img/curso.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">                        
-                          <a href="#" ><h5 class="card-title">Curso Creacion Mockups</h5></a>
-                        </div>
-                      </div>
-                </div>
+            </div>
         </div>
-
-
-</div>
-<!--Fin prueba filtros-->
-
-
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src=""></script>
