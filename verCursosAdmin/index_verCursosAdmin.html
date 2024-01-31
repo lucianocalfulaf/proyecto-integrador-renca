@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_verCursosAdmin.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <!-- HTML -->
+    <link rel="import" href="menu-hamburguesa/menu-hamburguesa.html">
+    <title>Admin Ver Cursos</title>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="header">
+        
+        <i class="fa-solid fa-bars" id="bars"></i>
+        
+        <nav class="nav" id="nav">
+            <button class="close-button"><i class="fa-solid fa-xmark" style="color: #ffffff;"></i></button>
+            <ul class="nav-items">
+                <li class="nav-item"><a href="#" class="link-item">Inicio</a></li>
+                <li class="nav-item"><a href="#" class="link-item">Perfiles</a></li>
+                <li class="nav-item"><a href="/verCursosAdmin/index_verCursosAdmin.html" class="link-item">Cursos</a></li>
+                <li class="nav-item"><a href="#" class="link-item">Rutas de Aprendizaje</a></li>
+                <li class="nav-item"><a href="#" class="link-item"><span>Cerrar Sesión</span> <i class="fa-solid fa-power-off" id="power"></i></a></li>
+            </ul>   
+        </nav>
+            
+        </nav>
+
+        <div class="logo">
+            <img class="logo-renca" src="renca.png" alt="Logo Renca">
+            <p>Administrador</p>
+        </div>
+        
+        
+    </header>
+
+    <!-- Submenú -->
+    <nav class="sub-menu">
+        <ul class="sub-menu-items">
+            <li class="sub-menu-item">
+                <a href="#">Perfiles</a>
+                <ul class="deployment">
+                    <li class="item-deployment"><a href="#">Ver Perfiles</a></li>
+                </ul>
+            </li>
+            <li class="sub-menu-item">
+                <a href="#">Cursos</a>
+                <ul class="deployment">
+                    <li class="item-deployment"><a href="#">Ver Cursos</a></li>
+                    <li class="item-deployment"><a href="/cursoSubidaAdmin/cursoSubidaAdmin.html">Subir Cursos</a></li>
+                </ul>
+            </li>
+            <li class="sub-menu-item">
+                <a href="#">Rutas de Aprendizaje</a>
+                <ul class="deployment">
+                    <li class="item-deployment"><a href="#">Ver Rutas De Aprendizaje</a></li>
+                    <li class="item-deployment"><a href="#">Crear Nueva Ruta De Aprendizaje</a></li>
+                </ul>
+            </li>
+            <li class="sub-menu-item">
+                <a href="#">Registrate <i class="fa-regular fa-user"></i></a>
+            </li>
+        </ul>
+    </nav>
+<main>
+    <!-- Main Content -->
+    <div class="h4" id="subirCurso"><h4> Cursos </h4></div>
+    <div class="container">
+        <div class="row">
+    <!-- Columna 1  -->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        
+                        <div class="card" style="width: 18rem; border: 6px solid #0192D0">
+                            <img src="/verCursosAdmin/imagenesCursos/img-1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                              <h5 class="card-title">Curso A</h5>
+                              <p class="card-text">Ruta Azul</p>
+                              <a href="#" class="btn btn-custom">Ver curso</a>
+                            </div>
+                          </div>
+                          <div class="card" style="width: 18rem; border: 6px solid #0192D0">
+                            <img src="/verCursosAdmin/imagenesCursos/img-2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                              <h5 class="card-title ">Curso B</h5>
+                              <p class="card-text">Ruta Azul</p>
+                              <a href="#" class="btn btn-custom">Ver curso</a>
+                            </div>
+                          </div>
+                          <div class="card" style="width: 18rem; border: 6px solid #0192D0">
+                            <img src="/verCursosAdmin/imagenesCursos/img-3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                              <h5 class="card-title">Curso C</h5>
+                              <p class="card-text">Ruta Azul</p>
+                              <a href="#" class="btn btn-custom">Ver curso</a>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+    <!-- Columna 2  -->
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                
+                <div class="card" style="width: 18rem; border: 6px solid #E68E0C">
+                    <img src="/verCursosAdmin/imagenesCursos/img-4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Curso M</h5>
+                      <p class="card-text">Ruta Naranja</p>
+                      <a href="#" class="btn btn-custom">Ver curso</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem; border: 6px solid #E68E0C">
+                    <img src="/verCursosAdmin/imagenesCursos/img-5.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                      <h5 class="card-title ">Curso N</h5>
+                      <p class="card-text">Ruta Naranja</p>
+                      <a href="#" class="btn btn-custom">Ver curso</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem; border: 6px solid #E68E0C">
+                    <img src="/verCursosAdmin/imagenesCursos/img-6.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Curso Ñ</h5>
+                      <p class="card-text">Ruta Naranja</p>
+                      <a href="#" class="btn btn-custom">Ver curso</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <!-- Columna 3  -->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+
+                        <div class="card" style="width: 18rem;  border: 6px solid #5fb9d3">
+                            <img src="/verCursosAdmin/imagenesCursos/img-7.jpg" class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                              <h5 class="card-title">Curso J</h5>
+                              <p class="card-text">Ruta Celeste</p>
+                              <a href="#" class="btn btn-custom">Ver curso</a>
+                            </div>
+                          </div>
+                          <div class="card" style="width: 18rem; border: 6px solid #5fb9d3">
+                            <img src="/verCursosAdmin/imagenesCursos/img-8.jpg" class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                              <h5 class="card-title">Curso K</h5>
+                              <p class="card-text">Ruta Celeste</p>
+                              <a href="#" class="btn btn-custom">Ver curso</a>
+                            </div>
+                          </div>
+                          <div class="card" style="width: 18rem; border: 6px solid #5fb9d3">
+                            <img src="/verCursosAdmin/imagenesCursos/img-9.jpg" class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                              <h5 class="card-title">Curso L</h5>
+                              <p class="card-text">Ruta Celeste</p>
+                              <a href="#" class="btn btn-custom">Ver curso</a>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/617b529bb2.js" crossorigin="anonymous"></script>
+    <!-- Local JavaScript -->
+    <script src="script_verCursosAdmin.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+</main>
+<body>
+   
+
+    <!-- Footer -->
+    <footer></footer>
+</body>
+</html>
