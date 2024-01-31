@@ -416,3 +416,60 @@ body{
     border-color: #b3fc05; /* Cambiar el color del borde al pasar el mouse o enfocar */
     color: #ffffff; /* Cambiar el color del texto al pasar el mouse o enfocar */
 }
+
+/*Footer*/
+
+/*caja general*/
+.container-fluid {
+    background-color: #666;
+    padding-top: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/*datos izquierda*/
+#info {
+    text-align: left !important;
+    font-family: 'Poppins';
+    font-size: small;
+    color: white;
+    margin: 10px 10px 0px 0px; 
+}
+
+/*logo renca*/
+.logo-renca {
+    width: 100px;
+    margin-left: 100px;
+    margin-right: 0%;
+}
+
+/*iconos izquierda*/
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25%;
+
+}
+
+.pin,
+.phone,
+.mail {
+    width: 20%;
+    margin-left: 100%;
+    margin-top: 18px;
+    
+}
+
+/*iconos y texto derecha*/
+#redesSociales {
+    margin-right: 5%;
+}
+
+.RRSS {
+    width: 5%;
+}
+
+.align-right {
+    text-align: right;
+}
