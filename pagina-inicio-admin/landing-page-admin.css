@@ -43,7 +43,7 @@ body {
     max-width: 10rem;
 }
 
-/* Navbar */
+/* Menú Desplegable */
 .nav {
     width: 40%;
     display: flex;
@@ -79,7 +79,7 @@ body {
 
 .nav-item:nth-child(5) {
     position: absolute;
-    bottom: -190%;
+    bottom: -140%;
     display: flex;
     align-self: center;
 }
@@ -92,6 +92,7 @@ body {
     align-items: center;
     gap: 1rem;
     width: 13%;
+    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
@@ -232,12 +233,6 @@ body {
     transition: 200ms ease-out;
 }
 
-/* .sub-menu-item a {
-    border: 3px solid #E68E0C;
-    border-radius: 5px;
-    background-color: rgba(118, 158, 51, 0.93);
-} */
-
 .sub-menu-item:hover {
     transform: scale(1.1);
     transition: 200ms ease-in;
@@ -274,4 +269,115 @@ body {
     background-color: #009A88;
     transform: scale(1.1);
     transition: 150ms ease-in-out;
+}
+
+
+/* Media Queries */
+@media screen and (max-width: 1429px) {
+    .nav-item {
+        font-size: .7rem;
+    }
+
+    .visiblenav {
+        width: 140px;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 965px) {
+    .sub-menu {
+        font-size: .8rem;;
+    }
+
+    .item-deployment {
+        width: auto;
+        height: auto;
+        font-size: .6rem;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .sub-menu {
+        font-size: .6rem;
+    }
+
+    .logo-renca {
+        max-width: 8rem;
+    }
+
+    .item-deployment {
+        width: auto;
+        height: auto;
+        font-size: .5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo-renca {
+        max-width: 6rem;
+    }
+
+    .item-deployment {
+        width: auto;
+        height: auto;
+        font-size: .4rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .visiblenav {
+        height: 100;
+        width: 100%;
+        position: absolute;
+        top: 5%;
+    }
+
+    .nav-item {
+        font-size: .8rem;
+    }
+
+    .logo-renca {
+        max-width: 4rem;
+    }
+
+    .logo {
+        font-size: .6rem;
+        position: relative;
+        right: 140%;
+    }
+
+    .item-deployment {
+        width: auto;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .visiblenav {
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+        top: 5%;
+    }
+
+    .nav-item {
+        font-size: .8rem;
+    }
+
+    .logo-renca {
+        max-width: 4rem;
+    }
+
+    .logo {
+        font-size: .6rem;
+        position: relative;
+        right: 140%;
+    }
+
+    .item-deployment {
+        width: auto;
+        height: auto;
+        font-size: .4rem;
+    }
+
 }
