@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Mis_cursos_a_detalle.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+     <title>Responsive Navigation Menu Bar</title>
+</head>
+<body>
+ <header>
+    <nav>
+        <div class="nav-bar">
+            <i class='bx bx-menu sidebarOpen' ></i>
+            <span class="logo navLogo"><a href="#">CurriculumRenca</a></span>
+
+            <div class="menu">
+                <div class="logo-toggle">
+                    <span class="logo"><a href="#">CurriculumRenca</a></span>
+                    <i class='bx bx-x siderbarClose'></i>
+                </div>
+
+                <ul class="nav-links">
+                    <li><a href="#">inicio</a></li>
+                    <li><a href="vista_perfil_usuario.html">perfil</a></li>
+                    <li><a href="cursos.html">cursos</a></li>
+                    <li><a href="#">acerca</a></li>
+                    <li><a href="#">contactanos</a></li>
+                </ul>
+            </div>
+
+            <div class="darkLight-searchBox">
+                <div class="dark-light">
+                    <i class='bx bx-moon moon'></i>
+                    <i class='bx bx-sun sun'></i>
+                </div>
+
+                <div class="searchBox">
+                   <div class="searchToggle">
+                    <i class='bx bx-x cancel'></i>
+                    <i class='bx bx-search search'></i>
+                   </div>
+
+                    <div class="search-field">
+                        <input type="text" placeholder="Search...">
+                        <i class='bx bx-search'></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+ </header>
+ <main>
+    <div class="top-row">
+      <div class="column-1">
+        <img src="img/Rectangle_35.png">
+      </div>
+      <div class="column-2">
+        <h1><strong>Curso B</strong></h1>
+        <h3>descripcion del curso</h3><br><br>
+        <h3>profesor:</h3><br>
+        <h3>duracion estimada:4 horas</h3>
+      </div>           
+      <div class="column-3">
+        <div class="content-container">
+         <p>Avance</p>
+         <p>5/7</p><br>
+         <button>Continuar curso</button> 
+        </div>
+      </div>
+    </div>
+    <div class="bottom-row">
+      <div class="card-content">
+        <div class="accordion">
+          <button class="accordion-btn"><span>Accordion 1</span><i class="fas fa-chevron-down"></i></button>
+          <div class="accordion-content">
+            <p>Content for Accordion 1</p>
+          </div>
+        </div>
+        <div class="accordion">
+          <button class="accordion-btn"><span>Accordion 2</span><i class="fas fa-chevron-down"></i></button>
+          <div class="accordion-content">
+            <p>Content for Accordion 2</p>
+          </div>
+        </div>
+        <div class="accordion">
+          <button class="accordion-btn"><span>Accordion 3</span><i class="fas fa-chevron-down"></i></button>
+          <div class="accordion-content">
+            <p>Content for Accordion 3</p>
+          </div>
+        </div>
+      </div>
+    </div>
+ </main> 
+  <script src="script-acordeon.js"></script>
+  <script src="script-de-navbar.js"></script>
+</body>
+</html>
