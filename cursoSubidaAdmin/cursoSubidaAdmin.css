@@ -25,60 +25,374 @@
     src: url('Tipografía/Poppins-MediumItalic.ttf') format('truetype');
 }
 
-/*navbar*/
-.navbar {
-    background-color:  #009A88;
-    height: 170px;
-}
 
 
-.logo-container {
-    width: 100%;
+/* Navbar */
+
+.header {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);  
+    grid-template-columns: repeat(5, 1fr);
+    align-content: center;
     justify-items: center;
+    padding: 2rem;
+    width: 100%;
+    background-color:#009A88;
+}
+
+/* Logo */
+.logo {
+    display: grid;
     align-items: center;
-}
-
-.logo-municipal {
-    grid-column: 1 / 2;
-}
-
-.logo-municipal-2 {
-    grid-column: 3 / 4;
-}
-
-#administrador {
-    color:white;
+    justify-items: center;
     grid-column: 5 / 6;
+    position: relative;
+    right: 5%;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
 }
 
 .logo-renca {
-    grid-column: 5 / 6;
+    max-width: 10rem;
 }
-/* barra verde claro */
-.explorar {
-    width: 100%;
-    height: 50px;
-    background-color: #769E33;
-    display: grid;
-    grid-template-columns:  repeat(5, 1fr);
-    justify-items: center;
+
+/* Menú Desplegable */
+.nav {
+    width: 40%;
+    display: flex;
+    justify-content: center;
     align-items: center;
+    left: 5%;
+    display: none;
+}
+
+/* Items */
+.nav-items {
+    display: flex;
+    list-style-type: none;
+    gap: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-items li a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 200ms ease-out;
+}
+
+.nav-item a:hover {
+    transform: scale(1.1);
+    transition: 200ms ease-in;
+    color:  #E68E0C;
+    font-weight: bolder;
+}
+
+.nav-item:nth-child(5) {
+    position: absolute;
+    bottom: -140%;
+    display: flex;
+    align-self: center;
+}
+
+/* Visible Nav */
+.visiblenav {
+    transition:linear;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 13%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #009A88;
+    padding: 2rem;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    opacity: 1;
+}
+
+.visiblenav .nav-items {
+    flex-direction: column;
+    position: absolute;
+    top: 130px;
+    gap: 3rem;
+}
+
+/* Power Button --> Botón utilizado para cerrar sesión | Sin funcionalidad */
+#power {
+    width: 25px;
+    height: auto;
+    margin-left: 7px;
+    transform: 200ms ease-out;
+}
+
+.fa-power-off:hover {
+    color: #E68E0C;
+    transition: 200ms ease-in;
+}
+
+/* Close Button --> Botón para cerrar sidebar desplegada */
+
+.close-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 50px;
+    color: white;
+    background-color: #05b9a4;
+    opacity: .9;
+    cursor: pointer;
+    border: 3px solid orange;
+    border-radius: 5px;
+    transition: 200ms ease-out;
+}
+
+.close-button:hover {
+    background-color:  #E68E0C;
+    transform: scale(1.1);
+    transition: 200ms ease-in-out;
+    font-weight: bolder;
+}
+
+.close-button:active {
+    background-color: #009A88;
+    transform: scale(1.1);
+    border: 3px solid orange;
+}
+
+.fa-xmark {
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-regular {
+    margin-left: 4px;
+}
+
+
+/* Menú Hamburguesa */
+
+/* Barras */
+#bars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transform: scale(2);
+    transition: 200ms ease-out;
+    color: #fff;
+}
+
+#bars:hover {
+    transform: scale(2.3);
+    transition: 200ms ease-in;
+    color: #E68E0C;
+}
+
+
+/* Submenú Desplegable */
+
+.sub-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(118, 158, 51, 0.93);
+}
+
+.sub-menu-items {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.sub-menu-items li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+.sub-menu-items li ul {
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+
+.sub-menu-items a:hover {
+    color: #E68E0C;
+}
+
+.sub-menu-items li:hover > ul {
+    display: block;
+}
+
+
+.sub-menu-item {
+    transition: 200ms ease-out;
+}
+
+.sub-menu-item:hover {
+    transform: scale(1.1);
+    transition: 200ms ease-in;
+}
+
+.sub-menu-item a {
+    text-decoration: none;
     color: #fff;
     font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+
+.deployment {
+    position: absolute;
+    top: 35px;
+    text-decoration: none;
+    list-style: none;
+    transition: 300ms ease-in;
+}
+
+.item-deployment {
+    border: 3px solid #E68E0C;
+    border-radius: 5px;
+    background-color: rgba(118, 158, 51, 0.93);
     text-align: center;
+    font-size: 12px;
 }
 
-.menu-hamburguesa {
-    grid-column: 1 / 2;
-    font-size: 20px;
+.item-deployment:hover {
+    border: 3px solid #E68E0C;
 }
 
-.d-flex {
-    grid-column: 3 / 4;
+.deployment li:hover {
+    background-color: #009A88;
+    transform: scale(1.1);
+    transition: 150ms ease-in-out;
 }
 
+
+/* Media Queries */
+@media screen and (max-width: 1429px) {
+    .nav-item {
+        font-size: .7rem;
+    }
+
+    .visiblenav {
+        width: 140px;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 965px) {
+    .sub-menu {
+        font-size: .8rem;;
+    }
+
+    .item-deployment {
+        width: auto;
+        height: auto;
+        font-size: .6rem;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .sub-menu {
+        font-size: .6rem;
+    }
+
+    .logo-renca {
+        max-width: 8rem;
+    }
+
+    .item-deployment {
+        width: auto;
+        height: auto;
+        font-size: .5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo-renca {
+        max-width: 6rem;
+    }
+
+    .item-deployment {
+        width: auto;
+        height: auto;
+        font-size: .4rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .visiblenav {
+        height: 100;
+        width: 100%;
+        position: absolute;
+        top: 5%;
+    }
+
+    .nav-item {
+        font-size: .8rem;
+    }
+
+    .logo-renca {
+        max-width: 4rem;
+    }
+
+    .logo {
+        font-size: .6rem;
+        position: relative;
+        right: 140%;
+    }
+
+    .item-deployment {
+        width: auto;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .visiblenav {
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+        top: 5%;
+    }
+
+    .nav-item {
+        font-size: .8rem;
+    }
+
+    .logo-renca {
+        max-width: 4rem;
+    }
+
+    .logo {
+        font-size: .6rem;
+        position: relative;
+        right: 140%;
+    }
+
+    .item-deployment {
+        width: auto;
+        height: auto;
+        font-size: .4rem;
+    }
+
+}
 /*fin navbar*/
 
 #video {
