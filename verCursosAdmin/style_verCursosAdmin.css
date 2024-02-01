@@ -418,7 +418,6 @@ body{
 }
 
 /*Footer*/
-
 *{
     font-family: poppins;
     color:white;
@@ -430,7 +429,7 @@ body{
 .pie-pagina {
     width: 100%;
     background-color: #666;
-    border: 20px solid #666;
+    border: 10px solid #666;
 }
 
 .grupo1 {
@@ -475,5 +474,5 @@ body{
 }
 
 .red-social a:hover{
-    color:aqua;
+    color:#b3fc05;
 }
