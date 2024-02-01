@@ -1,57 +1,58 @@
-body{
-  margin: 0;
-  padding: 0;
-  display: flex;
+body {
   background: linear-gradient(
-  to right,
-  /* rgb(257, 87, 30) 16.7%,
-  rgb(253, 162, 45) 16.7% 33.4%,
-  rgb(179, 252, 5) 33.4% 50.1%,
-  rgb(97, 255, 161) 50.1% 66.8%,
-  rgb(73, 182, 230) 66.8% 83.5%,
-  rgb(2, 237, 202) 83.5% 100% */
-  #f56524 16.7%,
-  #fca227 16.7% 33.4%,
-  #cac600 33.4% 50.1%,
-  #009A88 50.1% 66.8%,
-  #58b3b0 66.8% 83.5%,
-  #0088d4 83.5% 100%
-);
+    to right,
+    #f56524 16.7%,
+    #fca227 16.7% 33.4%,
+    #cac600 33.4% 50.1%,
+    #009A88 50.1% 66.8%,
+    #58b3b0 66.8% 83.5%,
+    #0088d4 83.5% 100%
+  );
 }
-    .titulo{
-      text-align: center;
-    }
-    .logo{
-      height: 15%;
-      width: 10%;
-    }
-    .formulario {
-      background-color: rgba(255, 255, 255, 0.7);
-      border-top: 10%;
-      padding: 20px;
-      border-radius: 20px;
-      display: flex;
-      flex: 1;
-      align-items: center;
-      align-content: center;
-      flex-direction: column;
-      margin-top: 5%;
-      margin-left: 33.2%;
-      margin-right: 33.2%;
-    }
-    .btn{
-      font-size: 14px;
-      color: #000000;
-      background-color: #ffffff;
-      padding: 10px 30px;
-      border: solid #e8e8e8 2px;
-      box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
-      border-radius: 45%;
-      transition : 599ms;
-      transform: translateY(0);
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      cursor: pointer;
-      
-      }
+
+.titulo {
+  text-align: center;
+}
+
+.logo {
+  width: 10%;
+  margin-left: 45%;
+}
+
+.formulario {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  border-radius: 20px;
+  margin: 5% auto;
+  max-width: 400px; /* Ancho máximo del formulario */
+}
+
+.btn {
+  font-size: 14px;
+  color: #000000;
+  background-color: #ffffff;
+  padding: 10px 30px;
+  border-radius: 45px;
+  cursor: pointer;
+}
+.container-fluid{
+  margin-top: 150px;
+
+}
+.form {
+  width: 100%; /* Ajuste del ancho del campo de entrada */
+  margin-bottom: 10px; /* Espaciado entre campos de entrada */
+}
+
+.botonRegister {
+  width: 100%; /* Ajuste del ancho del botón */
+  margin-top: 10px; /* Espaciado entre campos de entrada y botón */
+  border-radius: 10px;
+}
+
+/* Media queries para ajustar estilos en pantallas más pequeñas */
+@media only screen and (max-width: 768px) {
+  .formulario {
+    padding: 10px; /* Reducción del espacio interior */
+  }
+}

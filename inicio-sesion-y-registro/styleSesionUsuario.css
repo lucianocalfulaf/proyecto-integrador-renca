@@ -1,7 +1,4 @@
 body{
-    margin: 0;
-    padding: 0;
-    display: flex;
     background: linear-gradient(
     to right,
     #f56524 16.7%,
@@ -17,21 +14,21 @@ body{
     text-align: center;
   }
   .logo{
-    height: 55%;
-    width: 55%;
+    height: 50%;
+    width: 50%;
   }
   .formulario {
     background-color: rgba(255, 255, 255, 0.7);
     border-top: 10px;
-    padding: 20px;
+    padding: 0px;
     border-radius: 30px;
     display: flex;
-    flex: 1;
     align-items: center;
     align-content: center;
     flex-direction: column;
-    margin-top: 5%;
-    margin-left: 50%;
+    margin-top: 200px;
+    margin-left: 500px;
+    margin-right: 500px;
   }
   .btn{
     font-size: 14px;

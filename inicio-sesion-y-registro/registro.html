@@ -5,9 +5,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Registrarse</title>
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="styleRegistro.css" rel="stylesheet" type="text/css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   
@@ -15,7 +12,7 @@
 
 <body >
  
-  <div>
+  <div class="container-fluid">
     <form class="formulario">
         <h3 class="titulo" >Registrarse</h3>
       <br>
@@ -25,25 +22,25 @@
           <tbody>
             <tr>
               <td>
-                <input placeholder="Nombre completo:" type="text" id="name" name="name" required>
+                <input class="form"placeholder="Nombre completo:" type="text" id="name" name="name" required>
               </td>
               <td>
-                <input placeholder="Correo Electrónico:" type="email"  id="email" name="email" required>
+                <input class="form" placeholder="Correo Electrónico:" type="email"  id="email" name="email" required>
               </td>
             </tr>
             <tr>
               <td>
-                <input placeholder="Fecha de Nacimiento:" type="date"  id="dob" name="dob" require>
+                <input class="form" placeholder="Fecha de Nacimiento:" type="date"  id="dob" name="dob" require>
               </td>
               <td>
-                <input placeholder="Confirmar Correo Electrónico:" type="email"  id="confirmEmail" name="confirmEmail" required></td>
+                <input class="form" placeholder="Confirmar Correo Electrónico:" type="email"  id="confirmEmail" name="confirmEmail" required></td>
             </tr>
             <tr>
               <td>
-                <input placeholder="Dirección:" type="text" id="direction" name="direction" required>
+                <input class="form" placeholder="Dirección:" type="text" id="direction" name="direction" required>
               </td>
               <td>
-                <input placeholder="Contraseña:" type="password"  id="password" name="password" required>
+                <input class="form" placeholder="Contraseña:" type="password"  id="password" name="password" required>
               </td>
             </tr>
           </tbody>
@@ -51,7 +48,7 @@
         <br>
           <button type="btn" class="botonRegister" onclick="register()">Registrarse</button>
         <br>
-          <a href="#" onclick="login()">¿Ya tiene una cuenta? Ingrese</a>
+          <a class="text"href="#" onclick="login()">¿Ya tiene una cuenta? Ingrese</a>
   
      
     </form>
