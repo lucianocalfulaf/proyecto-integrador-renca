@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-Curso-Admin.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+     <title>Ver Curso Admin</title>
+         <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="import" href="menu-hamburguesa/menu-hamburguesa.html">
+ </head>
+ <body>
+ 
+     <!-- Navbar -->
+     <header class="header">
+         
+         <i class="fa-solid fa-bars" id="bars"></i>
+         
+         <nav class="nav" id="nav">
+             <button class="close-button"><i class="fa-solid fa-xmark" style="color: #ffffff;"></i></button>
+             <ul class="nav-items">
+                 <li class="nav-item"><a href="#" class="link-item">Inicio</a></li>
+                 <li class="nav-item"><a href="#" class="link-item">Perfiles</a></li>
+                 <li class="nav-item"><a href="#" class="link-item">Cursos</a></li>
+                 <li class="nav-item"><a href="#" class="link-item">Rutas de Aprendizaje</a></li>
+                 <li class="nav-item"><a href="#" class="link-item"><span>Cerrar Sesión</span> <i class="fa-solid fa-power-off" id="power"></i></a></li>
+             </ul>   
+         </nav>
+             
+         </nav>
+ 
+         <div class="logo">
+             <img class="logo-renca" src="/cursoSubidaAdmin/renca.png" alt="Logo Renca">
+             <p>Administrador</p>
+         </div>
+         
+         
+     </header>
+ 
+     <!-- Submenú -->
+     <nav class="sub-menu">
+         <ul class="sub-menu-items">
+             <li class="sub-menu-item">
+                 <a href="#">Perfiles</a>
+                 <ul class="deployment">
+                     <li class="item-deployment"><a href="#">Ver Perfiles</a></li>
+                 </ul>
+             </li>
+             <li class="sub-menu-item">
+                 <a href="#">Cursos</a>
+                 <ul class="deployment">
+                     <li class="item-deployment"><a href="/verCursosAdmin/index_verCursosAdmin.html">Ver Cursos</a></li>
+                     <li class="item-deployment"><a href="/cursoSubidaAdmin/cursoSubidaAdmin.html">Subir Cursos</a></li>
+                 </ul>
+             </li>
+             <li class="sub-menu-item">
+                 <a href="#">Rutas de Aprendizaje</a>
+                 <ul class="deployment">
+                     <li class="item-deployment"><a href="#">Ver Rutas De Aprendizaje</a></li>
+                     <li class="item-deployment"><a href="#">Crear Nueva Ruta De Aprendizaje</a></li>
+                 </ul>
+             </li>
+             <li class="sub-menu-item">
+                 <a href="#">Registrate <i class="fa-regular fa-user"></i></a>
+             </li>
+         </ul>
+     </nav>
+ </header>
+<!-- Contenido -->
+ <main>
+    <div class="top-row">
+      <div class="column-1">
+        <img src="/verCursosAdmin/imagenesCursos/Rectangle_35.png">
+      </div>
+      <div class="column-2">
+        <h1><strong>Curso B</strong></h1>
+        <h3>descripcion del curso</h3><br><br>
+        <h3>profesor:</h3><br>
+        <h3>duracion estimada:4 horas</h3>
+      </div>           
+      <div class="column-3">
+        <div class="content-container">
+         <p>Avance</p>
+         <p>5/7</p><br>
+         <button>Continuar curso</button> 
+        </div>
+      </div>
+    </div>
+    <div class="bottom-row">
+      <div class="card-content">
+        <div class="accordion">
+          <button class="accordion-btn"><span>Accordion 1</span><i class="fas fa-chevron-down"></i></button>
+          <div class="accordion-content">
+            <p>Content for Accordion 1</p>
+          </div>
+        </div>
+        <div class="accordion">
+          <button class="accordion-btn"><span>Accordion 2</span><i class="fas fa-chevron-down"></i></button>
+          <div class="accordion-content">
+            <p>Content for Accordion 2</p>
+          </div>
+        </div>
+        <div class="accordion">
+          <button class="accordion-btn"><span>Accordion 3</span><i class="fas fa-chevron-down"></i></button>
+          <div class="accordion-content">
+            <p>Content for Accordion 3</p>
+          </div>
+        </div>
+      </div>
+    </div>
+ </main> 
+  <script src="script-Curso-Admin.js"></script>
+      <!-- Font Awesome Icons -->
+      <script src="https://kit.fontawesome.com/617b529bb2.js" crossorigin="anonymous"></script>
+      <!-- Local JavaScript -->
+      <script src="landingPageAdmin.js"></script>
+  <!-- Footer -->
+
+</body>
+</html>
