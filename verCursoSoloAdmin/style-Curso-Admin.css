@@ -181,7 +181,7 @@
     justify-content: center;
     width: 100%;
     height: px;
-    background-color: rgba(118, 158, 51, 0.93);
+    background-color: #60bdb1;
 }
 
 .sub-menu-items {
@@ -206,7 +206,7 @@
 }
 
 .sub-menu-items a:hover {
-    color: #E68E0C;
+    color: #f59f30;
 }
 
 .sub-menu-items li:hover > ul {
@@ -239,15 +239,15 @@
 }
 
 .item-deployment {
-    border: 3px solid #E68E0C;
+    border: 3px solid #f59f30;
     border-radius: 5px;
-    background-color: rgba(118, 158, 51, 0.93);
+    background-color: #60bdb1;
     text-align: center;
     font-size: 12px;
 }
 
 .item-deployment:hover {
-    border: 3px solid #E68E0C;
+    border: 3px solid #f59f30;
 }
 
 .deployment li:hover {
@@ -863,7 +863,7 @@ body {
 }
 
 /*Footer*/
-*{
+.box p{
     font-family: poppins;
     color:white;
     margin: 0;

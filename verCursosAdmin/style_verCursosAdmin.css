@@ -71,7 +71,7 @@ body {
 .nav-item a:hover {
     transform: scale(1.1);
     transition: 200ms ease-in;
-    color:  #E68E0C;
+    color:  #f59f30;
     font-weight: bolder;
 }
 
@@ -117,7 +117,7 @@ body {
 }
 
 .fa-power-off:hover {
-    color: #E68E0C;
+    color: #f59f30;
     transition: 200ms ease-in;
 }
 
@@ -136,13 +136,13 @@ body {
     background-color: #05b9a4;
     opacity: .9;
     cursor: pointer;
-    border: 3px solid orange;
+    border: 3px solid #f59f30;
     border-radius: 5px;
     transition: 200ms ease-out;
 }
 
 .close-button:hover {
-    background-color:  #E68E0C;
+    background-color:  #f59f30;
     transform: scale(1.1);
     transition: 200ms ease-in-out;
     font-weight: bolder;
@@ -151,7 +151,7 @@ body {
 .close-button:active {
     background-color: #009A88;
     transform: scale(1.1);
-    border: 3px solid orange;
+    border: 3px solid #f59f30;
 }
 
 .fa-xmark {
@@ -182,7 +182,7 @@ body {
 #bars:hover {
     transform: scale(2.3);
     transition: 200ms ease-in;
-    color: #E68E0C;
+    color: #f59f30;
 }
 
 
@@ -194,7 +194,7 @@ body {
     justify-content: center;
     width: 100%;
     height: 60px;
-    background-color: rgba(118, 158, 51, 0.93);
+    background-color: #60bdb1;
 }
 
 .sub-menu-items {
@@ -219,7 +219,7 @@ body {
 }
 
 .sub-menu-items a:hover {
-    color: #E68E0C;
+    color: #f59f30;
 }
 
 .sub-menu-items li:hover > ul {
@@ -252,19 +252,19 @@ body {
 }
 
 .item-deployment {
-    border: 3px solid #E68E0C;
+    border: 3px solid #f59f30;
     border-radius: 5px;
-    background-color: rgba(118, 158, 51, 0.93);
+    background-color: #60bdb1;
     text-align: center;
     font-size: 12px;
 }
 
 .item-deployment:hover {
-    border: 3px solid #E68E0C;
+    border: 3px solid #f59f30;
 }
 
 .deployment li:hover {
-    background-color: #009A88;
+    background-color: #60bdb1;
     transform: scale(1.1);
     transition: 150ms ease-in-out;
 }
@@ -405,6 +405,11 @@ body{
    
 }
 
+.card-text {
+    font-family: poppins;
+    color:#000;
+}
+
 #btn-custom {
     background-color: #b3fc05; /* Color personalizado */
     border-color: #b3fc05; /* Color del borde */
@@ -418,7 +423,7 @@ body{
 }
 
 /*Footer*/
-*{
+p{
     font-family: poppins;
     color:white;
     margin: 0;

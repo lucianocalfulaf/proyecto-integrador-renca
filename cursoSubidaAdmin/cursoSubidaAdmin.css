@@ -1,31 +1,3 @@
-@font-face {
-    font-family: 'Poppins';
-    font-style: normal; /* Normal, no bold */
-    font-weight: 00; /* Peso de la fuente */
-    src: url('Tipografía/Poppins-Bold.ttf') format('truetype'); /* Ruta del archivo de la fuente */
-}
-
-@font-face {
-    font-family: 'Poppins';
-    font-style: italic; /* Itálica */
-    font-weight: bold; /* Negrita */
-    src: url('Tipografía/Poppins-ExtraBoldItalic.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Poppins';
-    font-style: italic; /* Itálica */
-    src: url('Tipografía/Poppins-Italic.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Poppins';
-    font-style: italic; /* Itálica */
-    font-weight: 500; /* Peso medio */
-    src: url('Tipografía/Poppins-MediumItalic.ttf') format('truetype');
-}
-
-
 
 /* Navbar */
 
@@ -85,7 +57,7 @@
 .nav-item a:hover {
     transform: scale(1.1);
     transition: 200ms ease-in;
-    color:  #E68E0C;
+    color:  #f59f30;
     font-weight: bolder;
 }
 
@@ -131,7 +103,7 @@
 }
 
 .fa-power-off:hover {
-    color: #E68E0C;
+    color: #f59f30;
     transition: 200ms ease-in;
 }
 
@@ -150,13 +122,13 @@
     background-color: #05b9a4;
     opacity: .9;
     cursor: pointer;
-    border: 3px solid orange;
+    border: 3px solid #f59f30;
     border-radius: 5px;
     transition: 200ms ease-out;
 }
 
 .close-button:hover {
-    background-color:  #E68E0C;
+    background-color:  #f59f30;
     transform: scale(1.1);
     transition: 200ms ease-in-out;
     font-weight: bolder;
@@ -196,7 +168,7 @@
 #bars:hover {
     transform: scale(2.3);
     transition: 200ms ease-in;
-    color: #E68E0C;
+    color: #f59f30;
 }
 
 
@@ -208,7 +180,7 @@
     justify-content: center;
     width: 100%;
     height: 60px;
-    background-color: rgba(118, 158, 51, 0.93);
+    background-color: #60bdb1;
 }
 
 .sub-menu-items {
@@ -233,7 +205,7 @@
 }
 
 .sub-menu-items a:hover {
-    color: #E68E0C;
+    color: #f59f30;
 }
 
 .sub-menu-items li:hover > ul {
@@ -266,19 +238,19 @@
 }
 
 .item-deployment {
-    border: 3px solid #E68E0C;
+    border: 3px solid #f59f30;
     border-radius: 5px;
-    background-color: rgba(118, 158, 51, 0.93);
+    background-color: #60bdb1;
     text-align: center;
     font-size: 12px;
 }
 
 .item-deployment:hover {
-    border: 3px solid #E68E0C;
+    border: 3px solid #f59f30;
 }
 
 .deployment li:hover {
-    background-color: #009A88;
+    background-color: #60bdb1;
     transform: scale(1.1);
     transition: 150ms ease-in-out;
 }
@@ -422,7 +394,7 @@
 }
 
 /*Footer*/
-*{
+p{
     font-family: poppins;
     color:white;
     margin: 0;
@@ -434,6 +406,7 @@
     width: 100%;
     background-color: #666;
     border: 10px solid #666;
+    position: static;
 }
 
 .grupo1 {
