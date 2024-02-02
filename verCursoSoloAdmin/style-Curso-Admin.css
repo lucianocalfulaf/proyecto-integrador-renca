@@ -1,5 +1,6 @@
+/* ===== Google Font Import - Poppins ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
-/*fin navbar*/
 *{
     margin: 0;
     padding: 0;
@@ -11,8 +12,8 @@
 
 /* ===== Colours ===== */
 :root{
-    --body-color: #dbdbdb;
-    --nav-color: #00C6AB;
+    --body-color: #ffffff;
+    --nav-color: #009A88;
     --side-nav: #6AA3B4;
     --text-color: #ffffff;
     --search-bar: #ffffff;
@@ -20,7 +21,7 @@
 }
 
 body{
-    height: 90vh;
+    height: 100vh;
     background-color: var(--body-color);
 }
 
@@ -36,7 +37,7 @@ nav{
     position: fixed;
     top: 0;
     left: 0;
-    height: 70px;
+    height: 110px;
     width: 100%;
     background-color: var(--nav-color);
     z-index: 100;
@@ -288,6 +289,12 @@ body.dark .search-field i{
         margin-top: 20px;
     }
 }
+
+.logo-renca{
+    width: 60%;
+    margin-top: 15px;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
