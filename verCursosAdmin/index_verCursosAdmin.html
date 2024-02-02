@@ -5,73 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style_verCursosAdmin.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
     <!-- HTML -->
-    <link rel="import" href="menu-hamburguesa/menu-hamburguesa.html">
     <title>Admin Ver Cursos</title>
 </head>
 <body>
+    <style>
+        @font-face {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 100; /* Poppins Medium */
+            src: url('Tipografía/Poppins-Medium.ttf') format('truetype');
+        }
+        body, .navbar-brand, .form-label, .form-control, .btn, .text-center {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 10; /* Poppins Medium */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-bar">
+            <i class='bx bx-menu sidebarOpen' ></i>
+            <span class="logo navLogo"><a href="#">Curriculum Renca</a></span>
 
-    <!-- Navbar -->
-    <header class="header">
-        
-        <i class="fa-solid fa-bars" id="bars"></i>
-        
-        <nav class="nav" id="nav">
-            <button class="close-button"><i class="fa-solid fa-xmark" style="color: #ffffff;"></i></button>
-            <ul class="nav-items">
-                <li class="nav-item"><a href="#" class="link-item">Inicio</a></li>
-                <li class="nav-item"><a href="#" class="link-item">Perfiles</a></li>
-                <li class="nav-item"><a href="/verCursosAdmin/index_verCursosAdmin.html" class="link-item">Cursos</a></li>
-                <li class="nav-item"><a href="#" class="link-item">Rutas de Aprendizaje</a></li>
-                <li class="nav-item"><a href="#" class="link-item"><span>Cerrar Sesión</span> <i class="fa-solid fa-power-off" id="power"></i></a></li>
-            </ul>   
-        </nav>
-            
-        </nav>
+            <div class="menu">
+                <div class="logo-toggle">
+                    <span class="logo"><a href="#">CurriculumRenca</a></span>
+                    <i class='bx bx-x siderbarClose'></i>
+                </div>
 
-        <div class="logo">
-            <img class="logo-renca" src="renca.png" alt="Logo Renca">
-            <p>Administrador</p>
+                <ul class="nav-links">
+                    <li><a href="#">inicio</a></li>
+                    <li><a href="#">perfiles</a></li>
+                    <li><a href="#">Cursos</a></li>
+                    <li><a href="#">Rutas</a></li>
+                </ul>
+            </div>
+
+            <div class="darkLight-searchBox">
+                <div class="dark-light">
+                    <i class='bx bx-moon moon'></i>
+                    <i class='bx bx-sun sun'></i>
+                </div>
+
+                <div class="searchBox">
+                    <div class="searchToggle">
+                        <i class='bx bx-x cancel'></i>
+                        <i class='bx bx-search search'></i>
+                    </div>
+
+                    <div class="search-field">
+                        <input id="barra-buscador" type="text" placeholder="Search...">
+                        <i class='bx bx-search'></i>
+                    </div>
+                </div>
+            </div>
+            <figure>
+                <img src="renca.png" alt="logo-renca" class="logo-renca">
+                <span class="logo" ><a href="#"style="font-size: medium;">Administrador</a></span>
+            </figure>
         </div>
-        
-        
-    </header>
 
-    <!-- Submenú -->
-    <nav class="sub-menu">
-        <ul class="sub-menu-items">
-            <li class="sub-menu-item">
-                <a href="#">Perfiles</a>
-                <ul class="deployment">
-                    <li class="item-deployment"><a href="#">Ver Perfiles</a></li>
-                </ul>
-            </li>
-            <li class="sub-menu-item">
-                <a href="#">Cursos</a>
-                <ul class="deployment">
-                    <li class="item-deployment"><a href="#">Ver Cursos</a></li>
-                    <li class="item-deployment"><a href="/cursoSubidaAdmin/cursoSubidaAdmin.html">Subir Cursos</a></li>
-                </ul>
-            </li>
-            <li class="sub-menu-item">
-                <a href="#">Rutas de Aprendizaje</a>
-                <ul class="deployment">
-                    <li class="item-deployment"><a href="#">Ver Rutas De Aprendizaje</a></li>
-                    <li class="item-deployment"><a href="#">Crear Nueva Ruta De Aprendizaje</a></li>
-                </ul>
-            </li>
-            <li class="sub-menu-item">
-                <a href="#">Registrate <i class="fa-regular fa-user"></i></a>
-            </li>
-        </ul>
-    </nav>
+    </nav> 
+ 
 <main>
     <!-- Main Content -->
-    <div class="h4" id="subirCurso"><h4> Cursos </h4></div>
+    <div class="h4" id="Curso"><h4> Cursos </h4></div>
     <div class="container">
         <div class="row">
     <!-- Columna 1  -->

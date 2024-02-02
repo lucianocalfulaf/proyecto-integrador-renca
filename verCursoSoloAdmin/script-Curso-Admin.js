@@ -1,70 +1,44 @@
-/*navbar*/
-// Menú Hamburguesa
+lang="es"
+const body = document.querySelector("body"),
+      nav = document.querySelector("nav"),
+      modeToggle = document.querySelector(".dark-light"),
+      searchToggle = document.querySelector(".searchToggle"),
+      sidebarOpen = document.querySelector(".sidebarOpen"),
+      siderbarClose = document.querySelector(".siderbarClose");
 
-const selectNav = document.querySelector('.nav');
-const selectButton = document.querySelector('.close-button');
+      let getMode = localStorage.getItem("mode");
+          if(getMode && getMode === "dark-mode"){
+            body.classList.add("dark");
+          }
 
-document.querySelector('#bars').addEventListener('click', () => {
-	setTimeout(function() {
-        selectNav.classList.toggle('visiblenav');
-    }, 160);
+// js code to toggle dark and light mode
+      modeToggle.addEventListener("click" , () =>{
+        modeToggle.classList.toggle("active");
+        body.classList.toggle("dark");
+
+        // js code to keep user selected mode even page refresh or file reopen
+        if(!body.classList.contains("dark")){
+            localStorage.setItem("mode" , "light-mode");
+        }else{
+            localStorage.setItem("mode" , "dark-mode");
+        }
+      });
+
+// js code to toggle search box
+        searchToggle.addEventListener("click" , () =>{
+        searchToggle.classList.toggle("active");
+      });
+ 
+      
+//   js code to toggle sidebar
+sidebarOpen.addEventListener("click" , () =>{
+    nav.classList.add("active");
 });
 
-document.querySelector('.close-button').addEventListener('click', () => {
-    selectNav.classList.remove('visiblenav');
+body.addEventListener("click" , e =>{
+    let clickedElm = e.target;
+
+    if(!clickedElm.classList.contains("sidebarOpen") && !clickedElm.classList.contains("menu")){
+        nav.classList.remove("active");
+    }
 });
-
-/*fin navbar*/
-
-/*acordeon*/
-document.addEventListener('DOMContentLoaded', function () {
-    const accordions = document.querySelectorAll('.accordion');
-  
-    accordions.forEach(function (accordion) {
-        const btn = accordion.querySelector('.accordion-btn');
-        const content = accordion.querySelector('.accordion-content');
-  
-        btn.addEventListener('click', function () {
-            const isActive = accordion.classList.contains('active');
-  
-            accordions.forEach(function (otherAccordion) {
-                if (otherAccordion !== accordion) {
-                    otherAccordion.classList.remove('active');
-                    otherAccordion.querySelector('.accordion-content').style.maxHeight = '0';
-                }
-            });
-  
-            if (!isActive) {
-                accordion.classList.add('active');
-                content.style.maxHeight = content.scrollHeight + 'px';
-            } else {
-                accordion.classList.remove('active');
-                content.style.maxHeight = '0';
-            }
-        });
-    });
-  });
-
-  /*barra progreso carta 1 */
-function updateProgressBar(progressBar, value) {
-    value = Math.round(value);
-    progressBar.querySelector(".progress__fill").style.width = `${value}%`;
-    progressBar.querySelector(".progress__text").textContent = `${value}%`;
-  }
-  
-  const myProgressBar = document.querySelector(".progress");
-  
-  /* Example */
-  updateProgressBar(myProgressBar, 60)
-
-/*boton continuar curso*/
-
-  // Obtener el botón por su ID
-var button = document.getElementById("continue-course-btn");
-
-// Agregar un evento de clic al botón
-button.addEventListener("click", function() {
-    // Redirigir a otra página
-    window.location.href = "Mis_cursos_a_detalle.html";
-});
-
