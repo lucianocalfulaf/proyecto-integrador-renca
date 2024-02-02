@@ -1,56 +1,44 @@
 let products = {
     data: [
       {
-        productName: "Regular White T-Shirt",
-        category: "Topwear",
-        price: "30",
-        image: "white-tshirt.jpg",
+        productName: "Curso de Desarrollo Web",
+        category: "Tecnologia",
+        modality: "Remoto",
+        image: "img/curso.jpg",
       },
       {
-        productName: "Beige Short Skirt",
-        category: "Bottomwear",
-        price: "49",
-        image: "short-skirt.jpg",
+        productName: "Curso Creative",
+        category: "Tecnologia",
+        modality: "Hibrido",
+        image: "img/aprendizaje.jpg",
       },
       {
-        productName: "Sporty SmartWatch",
-        category: "Watch",
-        price: "99",
-        image: "sporty-smartwatch.jpg",
+        productName: "Curso Diseño Mockup",
+        category: "Tecnologia",
+        modality: "Presencial",
+        image: "img/curso.jpg",
       },
       {
-        productName: "Basic Knitted Top",
-        category: "Topwear",
-        price: "29",
-        image: "knitted-top.jpg",
+        productName: "Curso de Metologias Agiles",
+        category: "Metodologia",
+        modality: "Remoto",
+        image: "img/aprendizaje.jpg",
       },
       {
-        productName: "Black Leather Jacket",
-        category: "Jacket",
-        price: "129",
-        image: "black-leather-jacket.jpg",
+        productName: "Curso de Diseño Web",
+        category: "Diseño",
+        modality: "Hibrido",
+        image: "img/curso.jpg",
       },
       {
-        productName: "Stylish Pink Trousers",
-        category: "Bottomwear",
-        price: "89",
-        image: "pink-trousers.jpg",
-      },
-      {
-        productName: "Brown Men's Jacket",
-        category: "Jacket",
-        price: "189",
-        image: "brown-jacket.jpg",
-      },
-      {
-        productName: "Comfy Gray Pants",
-        category: "Bottomwear",
-        price: "49",
-        image: "comfy-gray-pants.jpg",
+        productName: "Curso Programacion",
+        category: "Tecnologia",
+        modality: "Presencial",
+        image: "img/aprendizaje.jpg",
       },
     ],
-  };
-  
+  };  
+
   for (let i of products.data) {
     //Create Card
     let card = document.createElement("div");
@@ -72,10 +60,15 @@ let products = {
     name.classList.add("product-name");
     name.innerText = i.productName.toUpperCase();
     container.appendChild(name);
-    //price
-    let price = document.createElement("h6");
-    price.innerText = "$" + i.price;
-    container.appendChild(price);
+    //modality
+    let modality = document.createElement("h6");
+    modality.innerText = i.modality;
+    container.appendChild(modality);
+    //category
+    let category = document.createElement("h6");
+    category.innerText = "Categoria: "+ i.category;
+    container.appendChild(category);
+    
   
     card.appendChild(container);
     document.getElementById("products").appendChild(card);
