@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href='sidebar.css' rel='stylesheet'>
     <link href="mis_cursos.css" rel="stylesheet">
+    <link href="../style.css" rel="stylesheet">
 
     <!-- css landing page y fonts -->
         <link rel="stylesheet" href="../landing-page.css">
@@ -21,7 +22,7 @@
 <body id="body-pd">
     <header class="header" id="header">
         <div class="header_toggle"> <i class='bx bx-menu' id="header-toggle"></i> </div>
-        <div class="header_img"> <img src="https://i.imgur.com/hczKIze.jpg" alt=""></div>
+
         
         <nav class="navbar navbar-expand-lg bg-body-tertiary bg-primary">
             <div class="container-fluid">
@@ -76,66 +77,102 @@
                     <div class="col-10">
                         <input type="text" id="searchInput" placeholder="Filtrar por Curso" />
                     </div>
+
+
                     <div class="col-2">
                         <button id="filterButton">Filtros</button>
 
-                        <div id="filterSection" style="display: none;">
+                        <div id="overlay" style="position: fixed; width: 100%; height: 100%; display: none;"></div>
+                        <div id="filterSection" style="position: fixed; top: 50%; transform: translate(-50%, -50%); padding: 20px; display: none;">
                             <div class="filterOption">
-                                <button class="filterButton">Filtro 1</button>
-                                <select class="filterDropdown">
-                                    <option value="opcion1">Opción 1</option>
-                                    <option value="opcion2">Opción 2</option>
-                                    <!-- Agrega más opciones según sea necesario -->
+                                <span class="filter">Modalidad:</span>
+                                <select class="filterDropdown" id="modalidadDropdown">
+                                    <option value="Todos" class="option">Todos</option>
+                                    <option value="Remoto" class="option">Remoto</option>
+                                    <option value="Hibrido" class="option">Hibrido</option>
                                 </select>
                             </div>
-                        
+
                             <div class="filterOption">
-                                <button class="filterButton">Filtro 2</button>
-                                <select class="filterDropdown">
-                                    <option value="opcionA">Opción A</option>
-                                    <option value="opcionB">Opción B</option>
-                                    <!-- Agrega más opciones según sea necesario -->
+                                <span class="filter">Sección:</span>
+                                <select class="filterDropdown" id="seccionDropdown">
+                                    <option value="Todos" class="option">Todos</option>
+                                    <option value="Tecnologia" class="option">Tecnologia</option>
+                                    <option value="Metodologias" class="option">Metodologias</option>
                                 </select>
                             </div>
                             <!-- Agrega más botones de filtro con opciones según sea necesario -->
+                            <button id="limpiarFiltros">Limpiar Filtros</button>
                         </div>
-                        </div>
-                    </div>
-                </div>
-                
-                
-                <div class="row">
-                    <div class="col-4">
-                        <div class="card" style="width: 18rem;" id="card">
-                            <img src="img/curso.jpg" class="card-img-top" style="width: 205px;" alt="...">
-                            <div class="card-body">
-                                <a href="detalle_curso.html" class="course-link"><h5 class="card-title">Curso Desarrollo Web</h5></a>
+                    </div>                           
+                    <div class="container text-center">
+                        <div class="app">
+                            <div class="row" id="courseRow">
+                                <div class="col-4">
+                                    <div class="card" style="width: 18rem;" data-modalidad="Remoto" data-seccion="Tecnologia">
+                                        <img src="img/curso.jpg" class="card-img-top" style="width: 205px;" alt="...">
+                                        <div class="card-body">
+                                            <a href="detalle_curso.html" class="course-link"><h5 class="card-title">Curso Desarrollo Web</h5></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="card" style="width: 18rem;" data-modalidad="Remoto" data-seccion="Metodologias">
+                                        <img src="img/curso.jpg" class="card-img-top" style="width: 205px;" alt="...">
+                                        <div class="card-body">
+                                            <a href="detalle_curso.html" class="course-link"><h5 class="card-title">Curso Creative</h5></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="card" style="width: 18rem;" data-modalidad="Hibrido" data-seccion="Tecnologia">
+                                        <img src="img/curso.jpg" class="card-img-top" style="width: 205px;" alt="...">
+                                        <div class="card-body">
+                                            <a href="detalle_curso.html" class="course-link"><h5 class="card-title">Curso Diseño Mockup</h5></a>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="card" style="width: 18rem;" id="card">
-                            <img src="img/aprendizaje.jpg" class="card-img-top" style="width: 205px;" alt="...">
-                            <div class="card-body">
-                                <a href="detalle_curso.html" class="course-link"><h5 class="card-title">Curso Creative</h5></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="card" style="width: 18rem;" id="card">
-                            <img src="img/curso.jpg" class="card-img-top" style="width: 205px;" alt="...">
-                            <div class="card-body">
-                                <a href="detalle_curso.html" class="course-link"><h5 class="card-title">Curso Diseño Mockup</h5></a>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
+                    </div>                       
                 </div>
             </div>
         </div>
+
+        <!--Prueba filtro de busqueda ejemplo-->
+        <div class="container">
+            <div id="search-container">
+              <input
+                type="search"
+                id="search-input"
+                placeholder="Search product name here.."
+              />
+              <button id="search">Search</button>
+            </div>
+            <div id="buttons">
+              <button class="button-value" onclick="filterProduct('all')">All</button>
+              <button class="button-value" onclick="filterProduct('Topwear')">
+                Topwear
+              </button>
+              <button class="button-value" onclick="filterProduct('Bottomwear')">
+                Bottomwear
+              </button>
+              <button class="button-value" onclick="filterProduct('Jacket')">
+                Jacket
+              </button>
+              <button class="button-value" onclick="filterProduct('Watch')">
+                Watch
+              </button>
+            </div>
+            <div id="products"></div>
+          </div>
+
+
+
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src=""></script>
+        <script src="../script.js"></script>
         <script src="sidebar.js"></script>
         <script src="filtro.js"></script>
     </body>
