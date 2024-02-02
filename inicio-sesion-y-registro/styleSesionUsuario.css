@@ -33,7 +33,7 @@ body{
   .btn {
     font-size: 14px;
     color: #000000;
-    background-color: #ffffff;
+    background-color: #ebebeb;
     padding: 10px 30px;
     border-radius: 45px;
     cursor: pointer;
@@ -45,7 +45,7 @@ body{
   }
   
   .botonRegister {
-    width: 100%; /* Ajuste del ancho del botón */
+    width: 25%; /* Ajuste del ancho del botón */
     margin-top: 10px; /* Espaciado entre campos de entrada y botón */
     border-radius: 10px;
   }
