@@ -1,5 +1,3 @@
-/* ===== Google Font Import - Poppins ===== */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
 *{
     margin: 0;
@@ -8,7 +6,6 @@
     font-family: 'Poppins', sans-serif;
     transition: all 0.4s ease;;
 }
-
 
 /* ===== Colours ===== */
 :root{
@@ -45,7 +42,6 @@ nav{
 
 body.dark nav{
     border: 1px solid #393838;
-
 }
 
 nav .nav-bar{
@@ -120,6 +116,7 @@ nav .nav-bar .logo a{
 .nav-bar .darkLight-searchBox{
     display: flex;
     align-items: center;
+    margin-top: 20px; /* Increased spacing */
 }
 
 .darkLight-searchBox .dark-light,
@@ -177,7 +174,7 @@ nav .nav-bar .logo a{
 
 .searchBox .search-field{
     position: absolute;
-    bottom: -85px;
+    bottom: -64px; /* Adjusted position */
     right: 5px;
     height: 50px;
     width: 300px;
@@ -193,7 +190,7 @@ nav .nav-bar .logo a{
 }
 
 .searchToggle.active ~ .search-field{
-    bottom: -74px;
+    bottom: -64px;
     opacity: 1;
     pointer-events: auto;
 }
@@ -288,11 +285,27 @@ body.dark .search-field i{
         display: block;
         margin-top: 20px;
     }
+
+    /* Adjustments for search box */
+    .darkLight-searchBox {
+        margin-top: 20px; /* Increase spacing */
+    }
+
+    .searchBox .search-field {
+        bottom: -64px; /* Adjust position */
+    }
 }
 
-.logo-renca{
-    width: 60%;
-    margin-top: 15px;
+@media (max-width: 480px) {
+    .nav-bar .nav-links li a{
+        font-size: 14px; /* Decrease font size for smaller screens */
+    }
+}
+
+@media (max-width: 320px) {
+    .nav-bar .nav-links li a{
+        font-size: 12px; /* Further decrease font size for very small screens */
+    }
 }
 
 /*main*/
@@ -303,6 +316,7 @@ body.dark .search-field i{
 .btn-container {
     margin-top: 10px;
 }
+
 #todo {
     margin: 20px;
     background-color: #f0f0f0; 
@@ -313,11 +327,13 @@ body.dark .search-field i{
     margin-top: 10px;
     margin-left: 10px;
 }
+
 #subirCurso {
     color: #009A88;
     margin-top: 125px;
-    margin-left: 15px;;
+    margin-left: 15px;
 }
+
 #botonSubirCurso {
     color:white;
 }
@@ -325,7 +341,7 @@ body.dark .search-field i{
 /*Footer*/
 p{
     font-family: poppins;
-    color:white;
+    color: white;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -333,6 +349,8 @@ p{
 
 .pie-pagina {
     width: 100%;
+    height: 50%;
+    max-height: 100vh;
     background-color: #666;
     border: 10px solid #666;
     position: static;
@@ -340,7 +358,7 @@ p{
 
 .grupo1 {
     width: 100%;
-    max-width: 1200px;
+    max-width: 100vw;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -348,7 +366,7 @@ p{
     padding: 45px 5px;
 }
 
-.box figure{
+.container figure{
     width: 100%;
     height: 100%;
     display: flex;
@@ -357,16 +375,16 @@ p{
     margin-left: 25px;
 }
 
-.box-RRSS{
+.container .box-RRSS{
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin-right: 2%;;
+    margin-right: 2%;
 }
 
-.red-social a{
+.container .red-social a{
     display: inline-block;
     text-decoration: none;
     width: 45px;
@@ -375,10 +393,29 @@ p{
     color: white;
     margin-right: 1px;
     background-color: #666;
-    text-align: leftr;
+    text-align: left;
     transition: all 300ms ease;
 }
 
-.red-social a:hover{
-    color:#b3fc05;
+.container .red-social a:hover{
+    color: #b3fc05;
+}
+
+/* Media queries para hacer el diseño reactivo */
+
+@media screen and (max-width: 768px) {
+    .grupo1 {
+        grid-template-columns: 1fr;
+    }
+}
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 100; /* Poppins Medium */
+    src: url('Tipografía/Poppins-Medium.ttf') format('truetype');
+}
+body, .navbar-brand, .form-label, .form-control, .btn, .text-center {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 10; /* Poppins Medium */
 }

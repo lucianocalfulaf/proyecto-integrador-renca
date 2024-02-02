@@ -504,9 +504,12 @@ body {
 }
 
 .pie-pagina {
-    width: 100%;
-    background-color: #666;
-    border: 10px solid #666;
+  width: 100%;
+  height: 50%;
+  max-height: 100vh;
+  background-color: #666;
+  border: 10px solid #666;
+  position: static;
 }
 
 .grupo1 {
