@@ -42,3 +42,22 @@ body.addEventListener("click" , e =>{
         nav.classList.remove("active");
     }
 });
+
+//Validacion JS
+document.addEventListener("DOMContentLoaded", function() {
+  document.getElementById("botonSubirCurso").addEventListener("click", function(event) {
+      // Obtener los valores de los campos del formulario
+      var tituloCurso = document.getElementById("inputTituloNuevoCurso").value;
+      var descripcionCurso = document.getElementById("inputDescripcion").value;
+      var rutaAprendizaje = document.getElementById("inputRuta").value;
+      var moduloHoras = document.getElementById("inputModuloHoras").value;
+
+      // Verificar si los campos requeridos están vacíos
+      if (tituloCurso.trim() === "" || descripcionCurso.trim() === "" || rutaAprendizaje === "" || moduloHoras.trim() === "") {
+          // Mostrar una alerta indicando que se deben completar todos los campos
+          alert("Por favor completa todos los campos para subir el curso.");
+          // Evitar que el formulario se envíe
+          event.preventDefault();
+      }
+  });
+});

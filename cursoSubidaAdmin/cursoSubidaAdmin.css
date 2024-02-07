@@ -1,4 +1,3 @@
-
 *{
     margin: 0;
     padding: 0;
@@ -309,6 +308,38 @@ body.dark .search-field i{
 }
 
 /*main*/
+/*icono para subir video*/
+.upload-icon-container {
+    width: 100px;
+    height: 100px;
+    background-color: #61faa1; /* Color de fondo del círculo */
+    border-radius: 50%; /* Hace que el contenedor sea redondo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 20px; /* Espacio entre el contenedor y otros elementos */
+    margin-left: 170px;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+.aviso-video{
+    margin-top: 30px;
+}
+
+.upload-icon {
+    color: #fff; /* Color del icono */
+    font-size: 24px; /* Tamaño del icono */
+}
+
 #video {
     margin-top: 50px;
 }
@@ -338,69 +369,6 @@ body.dark .search-field i{
     color:white;
 }
 
-/*Footer*/
-p{
-    font-family: poppins;
-    color: white;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.pie-pagina {
-    width: 100%;
-    height: 50%;
-    max-height: 100vh;
-    background-color: #666;
-    border: 10px solid #666;
-    position: static;
-}
-
-.grupo1 {
-    width: 100%;
-    max-width: 100vw;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50px;
-    padding: 45px 5px;
-}
-
-.container figure{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    margin-left: 25px;
-}
-
-.container .box-RRSS{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin-right: 2%;
-}
-
-.container .red-social a{
-    display: inline-block;
-    text-decoration: none;
-    width: 45px;
-    height: 45px;
-    line-height: 45px;
-    color: white;
-    margin-right: 1px;
-    background-color: #666;
-    text-align: left;
-    transition: all 300ms ease;
-}
-
-.container .red-social a:hover{
-    color: #b3fc05;
-}
-
 /* Media queries para hacer el diseño reactivo */
 
 @media screen and (max-width: 768px) {
@@ -418,4 +386,63 @@ body, .navbar-brand, .form-label, .form-control, .btn, .text-center {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 10; /* Poppins Medium */
+}
+
+/*Footer*/
+p{
+    font-family: poppins;
+    color:white;
+    margin: 0;
+    padding: 0;
+}
+
+.pie-pagina {
+    width: 100%;
+    background-color: #666;
+    border: 10px solid #666;
+}
+
+.grupo1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 5px;
+}
+
+.box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 25px;
+}
+
+.box-RRSS{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 2%;;
+}
+
+.red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: white;
+    margin-right: 1px;
+    background-color: #666;
+    text-align: leftr;
+    transition: all 300ms ease;
+}
+
+.red-social a:hover{
+    color:#b3fc05;
 }

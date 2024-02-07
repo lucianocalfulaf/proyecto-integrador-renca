@@ -298,7 +298,7 @@ body.dark .search-field i{
 
 #Curso {
     color: #009A88;
-    margin-top: 10px;
+    margin-top: 125px;
     margin-left: 1500px;
     font-family: poppins;
     font-size:x-large;
@@ -307,6 +307,7 @@ body.dark .search-field i{
 
 body{
     background-color: #ffffff;
+    
 }
 
 .card-body {
