@@ -70,3 +70,14 @@ footer * {
     color: #b3fc05;
 }
 
+/* Media query para dispositivos de pantalla pequeña */
+@media (max-width: 768px) {
+    .grupo-a {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajusta el tamaño mínimo y máximo de las columnas */
+    }
+
+    .pie-pagina {
+        margin-top: 20px;
+    }
+}
+
