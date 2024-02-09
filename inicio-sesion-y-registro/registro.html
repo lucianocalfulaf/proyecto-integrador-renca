@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registrarse</title>
+    <link href="styleRegistro.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  
+</head>
+
+<body >
+ 
+  <div class="container-fluid">
+    <form class="formulario">
+        <h3 class="titulo" >Registrarse</h3>
+      <br>
+        <img src="img-registro\favicon_v3.png" alt="Registrarse Imagen" class="logo">
+      <br>
+        <table>
+          <tbody>
+            <tr>
+              <td>
+                <input class="form"placeholder="Nombre completo:" type="text" id="name" name="name" required>
+              </td>
+              <td>
+                <input class="form" placeholder="Correo Electrónico:" type="email"  id="email" name="email" required>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input class="form" placeholder="Fecha de Nacimiento:" type="date"  id="dob" name="dob" require>
+              </td>
+              <td>
+                <input class="form" placeholder="Confirmar Correo Electrónico:" type="email"  id="confirmEmail" name="confirmEmail" required></td>
+            </tr>
+            <tr>
+              <td>
+                <input class="form" placeholder="Dirección:" type="text" id="direction" name="direction" required>
+              </td>
+              <td>
+                <input class="form" placeholder="Contraseña:" type="password"  id="password" name="password" required>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+          <button type="btn" class="botonRegister" onclick="register()">Registrarse</button>
+        <br>
+          <a class="text"href="#" onclick="login()">¿Ya tiene una cuenta? Ingrese</a>
+  
+     
+    </form>
+</div>
+ 
+  
+
+  <script src="script-formulario-registro.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+
+</html>

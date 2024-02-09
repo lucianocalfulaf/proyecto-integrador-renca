@@ -1,0 +1,427 @@
+/* ===== Importación de Google Font - Poppins ===== */
+/* Se importa la fuente de Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* Estilos generales */
+/* Configuración de estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.4s ease;
+}
+
+/* Colores */
+/* Definición de variables de colores */
+:root {
+    --body-color: #fcfbfb;
+    --nav-color: #00C6AB;
+    --side-nav: #6AA3B4;
+    --text-color: #ffffff;
+    --search-bar: #ffffff;
+    --search-text: #010718;
+}
+
+/* Configuración del cuerpo */
+body {
+    height: 100vh;
+    background-color: var(--body-color);
+}
+
+/* Modo oscuro */
+body.dark {
+    --body-color: #18191A;
+    --nav-color: #242526;
+    --side-nav: #242526;
+    --text-color: #CCC;
+    --search-bar: #242526;
+}
+
+/* Estilos de la barra de navegación */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 70px;
+    width: 100%;
+    background-color: var(--nav-color);
+    z-index: 100;
+}
+
+/* Estilos para el modo oscuro de la barra de navegación */
+body.dark nav {
+    border: 1px solid #393838;
+}
+
+/* Estilos de la barra de navegación y su contenido */
+nav .nav-bar {
+    position: relative;
+    height: 100%;
+    max-width: 1000px;
+    width: 100%;
+    background-color: var(--nav-color);
+    margin: 0 auto;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Icono para abrir la barra lateral en dispositivos móviles */
+nav .nav-bar .sidebarOpen {
+    color: var(--text-color);
+    font-size: 25px;
+    padding: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Enlace del logo en la barra de navegación */
+nav .nav-bar .logo a {
+    font-size: 25px;
+    font-weight: 500;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+/* Alternar entre el logo y el botón para cerrar la barra lateral */
+.menu .logo-toggle {
+    display: none;
+}
+
+/* Estilos de los enlaces de navegación */
+.nav-bar .nav-links {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos de cada elemento de la lista de enlaces de navegación */
+.nav-bar .nav-links li {
+    margin: 0 5px;
+    list-style: none;
+}
+
+/* Estilos de los enlaces de navegación */
+.nav-links li a {
+    position: relative;
+    font-size: 17px;
+    font-weight: 400;
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 10px;
+}
+
+/* Efecto de resaltado al pasar el cursor sobre los enlaces de navegación */
+.nav-links li a::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    background-color: var(--text-color);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.nav-links li:hover a::before {
+    opacity: 1;
+}
+
+/* Contenedor de elementos para el modo oscuro y el botón de búsqueda */
+.nav-bar .darkLight-searchBox {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos para el modo oscuro y el botón de búsqueda */
+.darkLight-searchBox .dark-light,
+.darkLight-searchBox .searchToggle {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+}
+
+/* Estilos de los íconos de sol y luna */
+.dark-light i,
+.searchToggle i {
+    position: absolute;
+    color: var(--text-color);
+    font-size: 22px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Configuración para el modo claro */
+.dark-light i.sun {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.dark-light.active i.sun {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.dark-light.active i.moon {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Configuración para el botón de búsqueda */
+.searchToggle i.cancel {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.searchToggle.active i.cancel {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.searchToggle.active i.search {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Campo de búsqueda */
+.searchBox {
+    position: relative;
+}
+
+/* Estilos del campo de búsqueda */
+.searchBox .search-field {
+    position: absolute;
+    bottom: -85px;
+    right: 5px;
+    height: 50px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    background-color: var(--nav-color);
+    padding: 3px;
+    border-radius: 6px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.searchToggle.active ~ .search-field {
+    bottom: -74px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Estilos del icono de búsqueda */
+.search-field::before {
+    content: '';
+    position: absolute;
+    right: 14px;
+    top: -4px;
+    height: 12px;
+    width: 12px;
+    background-color: var(--nav-color);
+    transform: rotate(-45deg);
+    z-index: -1;
+}
+
+/* Estilos del campo de entrada de búsqueda */
+.search-field input {
+    height: 100%;
+    width: 100%;
+    padding: 0 45px 0 15px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--search-text);
+    background-color: var(--search-bar);
+}
+
+/* Estilos para el modo oscuro del campo de entrada de búsqueda */
+body.dark .search-field input {
+    color: var(--text-color);
+}
+
+/* Estilos del icono de búsqueda */
+.search-field i {
+    position: absolute;
+    color: var(--nav-color);
+    right: 15px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* Estilos para el modo oscuro del icono de búsqueda */
+body.dark .search-field i {
+    color: var(--text-color);
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 790px) {
+    /* Icono para abrir la barra lateral en dispositivos móviles */
+    nav .nav-bar .sidebarOpen {
+        display: block;
+    }
+
+    /* Estilos para el menú de la barra lateral */
+    .menu {
+        position: fixed;
+        height: 100%;
+        width: 320px;
+        left: -100%;
+        top: 0;
+        padding: 20px;
+        background-color: var(--side-nav);
+        z-index: 100;
+        transition: all 0.4s ease;
+    }
+
+    /* Mostrar el menú de la barra lateral cuando está activo */
+    nav.active .menu {
+        left: -0%;
+    }
+
+    /* Ocultar el logo en la barra de navegación cuando se abre el menú en dispositivos móviles */
+    nav.active .nav-bar .navLogo a {
+        opacity: 0;
+        transition: all 0.3s ease;
+    }
+
+    /* Configuración para alternar entre el logo y el botón para cerrar la barra lateral */
+    .menu .logo-toggle {
+        display: block;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    /* Estilos para el botón de cierre de la barra lateral */
+    .logo-toggle .siderbarClose {
+        color: var(--text-color);
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    /* Configuración para los enlaces de navegación en dispositivos móviles */
+    .nav-bar .nav-links {
+        flex-direction: column;
+        padding-top: 30px;
+    }
+
+    /* Estilos para cada elemento de la lista de enlaces de navegación en dispositivos móviles */
+    .nav-links li a {
+        display: block;
+        margin-top: 20px;
+    }
+}
+.card-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap to the next line on smaller screens */
+    justify-content: space-around;
+    align-items: center;
+    padding: 1px;
+    height: 90%;
+}
+
+.card {
+    flex: 1;
+    max-width: 400px; /* Set the width of each card */
+    height: 500px; /* Set the height of each card */
+    padding: 20px; /* Add padding to the cards */
+    margin: 10px; /* Adjust the margin around each card */
+    background-color: #ffffff; /* Set your desired card background color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.767);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.card.card-with-image {
+    position: relative;
+    height: 500px; /* Set the height of the card with image */
+    width: 400px; /* Set the width of the card with image */
+    border: solid rgb(255, 255, 255);
+}
+
+.card-image-container {
+    overflow: hidden;
+    border: 5px solid cadetblue;
+    border-radius: 9px;
+    box-shadow: 0 0 10px black;
+    width: 50%; /* Set the width of the circular image container */
+    height: 40%; /* Set the height of the circular image container */
+    margin: 0 auto 5px; /* Adjust the bottom margin for the image container */
+}
+
+.card-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card h2 {
+    color: #333; /* Set your desired heading color */
+}
+
+.card p {
+    color: #666; /* Set your desired paragraph color */
+    font-size: 14px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .card {
+        flex: 1 0 100%; /* Full width for smaller screens */
+        margin: 10px 0; /* Adjust the margin for smaller screens */
+    }
+
+    .card.card-with-image {
+        width: 100%; /* Full width for cards with images on smaller screens */
+    }
+}
+.progress {
+    position: relative;
+    width: 210px;
+    height: 30px;
+    background: #9cbab4;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 0 auto; /* Agrega esta línea para centrar la barra de progreso horizontalmente */
+}
+.progress__fill{
+    width: 0%;
+    height: 100%;
+    background: #00C6AB;
+    transition: all 0.2s;
+}
+.progress__text {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    font: bold 14px 'Quicksand', sans-serif;
+    color: #ffffff;
+}
+button {
+    background-color: #ffffff;
+    border: solid black;
+    border-radius: 20px;
+    box-shadow: 7px rgba(0, 0, 0, 0.788);
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
