@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './SubirCurso.css';
 import Boton from '/componentes/Boton/Boton'; 
 import Formulario from '/componentes/Formulario/Formulario';
