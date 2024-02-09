@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 function TarjetaCursos() {
-  const curso = {
+  const cursos = {
     data: [
       {
         cursoName: "Curso Desarrollo Web",
@@ -39,14 +39,56 @@ function TarjetaCursos() {
         duration: "30hrs",
         image: "./src/assets/aprendizaje.jpg",
       },
+      
     ],
   };
 
+  const [searchTerm, setSearchTerm] = useState('');
+  const [selectedCategory, setSelectedCategory] = useState('Todos');
+
+  const handleSearch = (event) => {
+    setSearchTerm(event.target.value);
+  };
+
+  const handleCategoryChange = (event) => {
+    setSelectedCategory(event.target.value);
+  };
+
+  const filteredCursos = cursos.data.filter((curso) => {
+    return (
+      curso.cursoName.toLowerCase().includes(searchTerm.toLowerCase()) &&
+      (selectedCategory === 'Todos' || curso.category === selectedCategory)
+    );
+  });
 
   return (
     <div className="container">
+      <div className="row mb-3">
+        <div className="col-md-6">
+          <input
+            type="text"
+            className="form-control"
+            placeholder="Buscar curso..."
+            value={searchTerm}
+            onChange={handleSearch}
+          />
+        </div>
+        <div className="col-md-6">
+          <select
+            className="form-select"
+            value={selectedCategory}
+            onChange={handleCategoryChange}
+          >
+            <option value="Todos">Todos</option>
+            <option value="Tecnologia">Tecnología</option>
+            <option value="Metodologia">Metodología</option>
+            <option value="Diseño">Diseño</option>
+            {/* Agrega más opciones de categorías si es necesario */}
+          </select>
+        </div>
+      </div>
       <div className="row">
-        {curso.data.map((curso, index) => (
+        {filteredCursos.map((curso, index) => (
           <div key={index} className={`col-md-4 mb-4 ${curso.category}`}>
             <div className="card">
               <img src={curso.image} className="card-img-top" alt={curso.cursoName} />
