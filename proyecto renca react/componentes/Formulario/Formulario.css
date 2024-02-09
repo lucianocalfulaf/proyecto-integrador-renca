@@ -1,6 +1,4 @@
-
-/* Formulario.css */
-
+/*Formulario zona central*/
 .form-container {
     max-width: 400px;
     margin: 0 auto;
@@ -32,7 +30,7 @@
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    resize: vertical; /* Permite redimensionar verticalmente */
+    resize: vertical; 
   }
   
   /* CSS para el dropdown */

@@ -17,7 +17,7 @@ function Miniatura() {
   };
 
   return (
-    <div className="red-social">
+    <div className="seccion-derecha">
       <h2 style={{ fontSize: 'medium', textAlign: 'left' }}>Miniatura</h2>
       {miniatura && <img src={miniatura} alt="Miniatura" style={{ maxWidth: '100%', height: 'auto' }} />}
       <div className="selectFile">

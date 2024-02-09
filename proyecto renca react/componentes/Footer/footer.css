@@ -8,6 +8,7 @@ footer * {
     height:min-content;
 }
 
+/*Todo*/
 .pie-pagina {
     background-color: #009A88;
     display:absolute;
@@ -15,8 +16,7 @@ footer * {
     padding: 0;
 }
 
-
-
+/*Seccion izquierda*/
 .grupo-a {
     width: 100%;
     max-width: auto;
@@ -27,6 +27,7 @@ footer * {
     padding: 45px 5px;
 }
 
+/*Informacion de contacto*/
 .box-info {
     width: 100%;
     height: 100%;
@@ -34,7 +35,7 @@ footer * {
     margin-left: 25px;
 }
 
-
+/*imagen renca*/
 .box figure {
     width: 100%;
     height: 100%;
@@ -44,6 +45,7 @@ footer * {
     margin-left: 25px;
 }
 
+/*seccion derecha*/
 .box-RRSS {
     width: 100%;
     height: 100%;
@@ -51,6 +53,7 @@ footer * {
     align-items: right;
 }
 
+/*iconos redes sociales*/
 .red-social a {
     display: inline-block;
     text-decoration: none;
@@ -59,7 +62,6 @@ footer * {
     line-height: 45px;
     color: white;
     margin-right: 1px;
-    background-color: #ffffff;
     text-align: right;
     transition: all 300ms ease;
 }
