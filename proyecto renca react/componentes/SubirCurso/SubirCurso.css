@@ -1,0 +1,83 @@
+
+main * {
+    font-family: poppins;
+    color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    display: grid;
+    background-color: #ffffff;
+}
+
+.grupo-2 {
+    text-align: left;
+    margin-left: 25px;
+}
+
+.grupo-1 {
+
+    max-width: auto;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 100px;
+    background-color: #f7f7f7;
+}
+
+#dropZ {
+    margin-top: 150px;
+}
+
+h4 {
+    margin-top: 30px;
+}
+
+.box-info {
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    margin-left: 25px;
+}
+
+
+.box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start; /* Alinear elementos al principio */
+    align-items: center;
+    margin-left: 25px;
+}
+
+.box-3 {
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+    align-items: right;
+    margin-top:175px;
+}
+
+
+.selectFile {
+    margin-bottom: 20px; /* Espacio adicional debajo del elemento */
+  }
+  
+  .selectFile label {
+    display: block; /* Convertir el label en un bloque para ocupar todo el ancho disponible */
+    background-color: #60BDB1; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Mostrar un cursor de selección */
+    text-align: center; /* Alinear el texto al centro */
+  }
+  
+  .selectFile input[type="file"] {
+    display: none; /* Ocultar el input de tipo file */
+  }
+  

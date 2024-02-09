@@ -1,0 +1,24 @@
+/* styles.css */
+
+/* Estilos para el botón */
+.custom-button {
+    background-color: #60BDB1; /* Color de fondo */
+    border: none; /* Sin borde */
+    color: white; /* Color del texto */
+    padding: 15px 32px; /* Padding */
+    text-align: center; /* Texto centrado */
+    text-decoration: none; /* Sin decoración de texto */
+    display: inline-block; /* Bloque en línea */
+    font-size: 16px; /* Tamaño de fuente */
+    margin: 60px 2px 2px 2px; /* Margen */
+    cursor: pointer; /* Cursor apuntando */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Sombra */
+    transition: 0.3s; /* Transición */
+  }
+  
+  /* Estilos para el botón al pasar el mouse */
+  .custom-button:hover {
+    background-color: #769E33; /* Cambia el color de fondo al pasar el mouse */
+  }
+  
