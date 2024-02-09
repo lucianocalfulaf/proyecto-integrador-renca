@@ -1,74 +1,34 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
-const [cursoEstado, setCurso] = useState([]);
-const [search, setSearch] = useState('');
+function FilterButton({ onFilterChange }) {
+  const [isOpen, setIsOpen] = useState(false);
 
-function Filtro() {
-  const curso = {
-    data: [
-      {
-        cursoName: "Curso Desarrollo Web",
-        category: "Tecnologia",
-        duration: "20hrs",
-        image: "./src/assets/curso.jpg",
-      },
-      {
-        cursoName: "Curso Creative",
-        category: "Tecnologia",
-        duration: "10hrs",
-        image: "./src/assets/aprendizaje.jpg",
-      },
-      {
-        cursoName: "Curso Diseño Mockup",
-        category: "Tecnologia",
-        duration: "10hrs",
-        image: "./src/assets/curso.jpg",
-      },
-      {
-        cursoName: "Curso Metologias Agiles",
-        category: "Metodologia",
-        duration: "15hrs",
-        image: "./src/assets/aprendizaje.jpg",
-      },
-      {
-        cursoName: "Curso Diseño Web",
-        category: "Diseño",
-        duration: "20hrs",
-        image: "./src/assets/curso.jpg",
-      },
-      {
-        cursoName: "Curso Programacion",
-        category: "Tecnologia",
-        duration: "30hrs",
-        image: "./src/assets/aprendizaje.jpg",
-      },
-    ],
-    
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
   };
-  setCurso(curso);
+
+  const handleFilterChange = (filter) => {
+    onFilterChange(filter);
+    toggleMenu();
+  };
 
   return (
-    <div className="container">
-    <div className='row'>
-        <input  value={search} onChange={searcher} type='text' className='form-control' placeholder='Buscar'></input>
-    </div>
-      <div className="row">
-      {curso.data.map((curso, index) => (
-          <div key={index} className={`col-md-4 mb-4 ${curso.category}`}>
-            <div className="card">
-              <img src={curso.image} className="card-img-top" alt={curso.cursoName} />
-              <div className="card-body">
-                <h5 className="card-title">{curso.cursoName}</h5>
-                <p className="card-text">Duración: {curso.duration}</p>
-                <p className="card-text">Categoría: {curso.category}</p>
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
+    <div className="dropdown">
+      <button
+        className="btn btn-secondary dropdown-toggle"
+        type="button"
+        onClick={toggleMenu}
+      >
+        Filter
+      </button>
+      {isOpen && (
+        <ul className="dropdown-menu">
+          <li><button className="dropdown-item" onClick={() => handleFilterChange('duration')}>Duration</button></li>
+          <li><button className="dropdown-item" onClick={() => handleFilterChange('category')}>Category</button></li>
+        </ul>
+      )}
     </div>
   );
 }
 
-
-export default Filtro;
+export default FilterButton;
