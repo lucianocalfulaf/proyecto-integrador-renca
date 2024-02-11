@@ -1,11 +1,11 @@
 import './main-styles/Main.css';
-import Card from './main-sub-components/Card/Card';
+import Search from './main-sub-components/Search/Search';
 
 
 const Main = () => {
     return (
         <main className="main">
-            <Card />
+            <Search />
         </main>
     );
 }
