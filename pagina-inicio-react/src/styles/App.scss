@@ -1,0 +1,15 @@
+@import '../resets/_resets.scss';
+@import '../resets/_variables.scss';
+
+body {
+    height: 120vh;
+    width: 90%;
+    background-image: url("../assets/logoCvRenca.png"); // Cambiar Logo
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    top: 0;
+    background-size: 30%;
+    background-attachment: fixed;
+    background-color: $seventh-color;
+}

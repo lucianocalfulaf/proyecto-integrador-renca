@@ -1,0 +1,98 @@
+@import '../../../resets/resets';
+@import '../../../resets/variables';
+
+// Footer
+.footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    // background: linear-gradient(
+    //     to right,
+    //     /* rgb(257, 87, 30) 16.7%,
+    //     rgb(253, 162, 45) 16.7% 33.4%,
+    //     rgb(179, 252, 5) 33.4% 50.1%,
+    //     rgb(97, 255, 161) 50.1% 66.8%,
+    //     rgb(73, 182, 230) 66.8% 83.5%,
+    //     rgb(2, 237, 202) 83.5% 100% */
+    //     #D75E24 16.7%,
+    //     #E68E0C 16.7% 33.4%,
+    //     #769E33 33.4% 50.1%,
+    //     #009A88 50.1% 66.8%,
+    //     #5FB9D3 66.8% 83.5%,
+    //     #0192D0 83.5% 100%
+    //   );
+    background-color: $primary-color;
+    color: $text-color;
+    width: 100vw;
+
+    // Sección 1
+    &__section {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    // Logo Renca
+    &__section img {
+        width: 20%;
+        margin: 10px;
+        margin-left: 6%;
+    }
+
+    &__item i {
+        margin-right: 10px;
+    }
+
+    &__list li {
+        list-style: none;
+        text-align: start;
+        line-height: 1.9rem;
+        font-size: 12px;
+    }
+
+    // Sección 2
+    &__socials {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        align-items: center;
+        justify-items: center;   
+        width: 100%; 
+        height: 100%;    
+    }
+
+    // Título principal
+    h2 {
+        width: 100%;
+        height: 100%;
+        margin-top: 14%;
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    // Redes Sociales
+    &__contact {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 45%;
+        align-items: center;
+        list-style: none;
+        margin-top: -10%;
+    }
+    
+    
+
+    &__contact i:hover {
+        cursor: pointer;
+        color: $quinary-color;
+        transform: scale(1.1);
+    }
+    
+}

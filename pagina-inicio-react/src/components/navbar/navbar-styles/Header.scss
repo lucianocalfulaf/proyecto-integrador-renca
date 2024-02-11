@@ -1,0 +1,61 @@
+@import '../../../resets/resets';
+@import '../../../resets/variables';
+
+@mixin gridColumn($columns) {    
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
+}
+
+// Header
+.header {
+    display: grid;
+    grid-template-rows: 2fr .4fr;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 0;
+    grid-row-end: 2;
+    width: 100%;
+    
+
+    // Encabezado
+    &__container {
+        height: 100%;
+        width: 100vw;
+        display: grid;
+        @include gridColumn(4);
+        grid-template-rows: 1fr;
+        justify-items: center;
+        align-items: center;
+        background: linear-gradient(
+        to right,
+        /* rgb(257, 87, 30) 16.7%,
+        rgb(253, 162, 45) 16.7% 33.4%,
+        rgb(179, 252, 5) 33.4% 50.1%,
+        rgb(97, 255, 161) 50.1% 66.8%,
+        rgb(73, 182, 230) 66.8% 83.5%,
+        rgb(2, 237, 202) 83.5% 100% */
+        #D75E24 16.7%,
+        #E68E0C 16.7% 33.4%,
+        #769E33 33.4% 50.1%,
+        #009A88 50.1% 66.8%,
+        #5FB9D3 66.8% 83.5%,
+        #0192D0 83.5% 100%
+      );
+    }
+
+    // Favicon
+    &__favicon{
+        grid-column-start: 4;
+        grid-column-end: 5;
+        width: 25%;
+        margin-left: 30%;
+    }
+
+    // Logo Renca
+    &__logo {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        width: 30%;
+        margin-right: 30%;
+    }
+}

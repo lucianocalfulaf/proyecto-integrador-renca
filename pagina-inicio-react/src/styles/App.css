@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+html {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  height: 120vh;
+  width: 90%;
+  background-image: url("../assets/logoCvRenca.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  top: 0;
+  background-size: 30%;
+  background-attachment: fixed;
+  background-color: #F9F6EE;
+}/*# sourceMappingURL=App.css.map */
