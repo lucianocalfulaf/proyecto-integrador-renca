@@ -1,0 +1,31 @@
+.column-4 {
+  flex: 2.7;
+  padding: 10px; 
+  margin-left:25px;
+}
+
+.accordion-header {
+    cursor: pointer;
+    margin: 0;
+    padding: 10px;
+    background-color: #f0f0f0;
+    text-align: left;
+  }
+  
+  .accordion-panel {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease-out;
+  }
+  
+  .accordion-panel.active {
+    max-height: 500px;
+  }
+  
+
+  @media screen and (max-width: 992px) {
+    .column-4 {
+      width: 100%; 
+      height: auto;
+    }
+  }

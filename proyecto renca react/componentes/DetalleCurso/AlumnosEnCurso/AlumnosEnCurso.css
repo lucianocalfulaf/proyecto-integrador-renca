@@ -1,0 +1,28 @@
+
+.column-5 {
+    flex: 1;
+    margin-top:0px;
+  }
+
+  .column-5 {
+     width: 100%; /* Ajusta el ancho de las columnas al 100% en pantallas más pequeñas */
+     height: auto;/* Ajusta la altura de las columnas automáticamente */
+   }
+
+  .alumnos {
+    width: 200px;
+    padding: 20px 40px 10px 40px;
+    text-align: center;
+    background-color: #D9D9D9;
+    border-radius: 20px;
+    margin-bottom: 15px;
+   
+  }
+
+  @media screen and (max-width: 768px) {
+    .alumnos {
+      width: 100%;
+      margin-left: 10px; 
+      margin-right: 10px; 
+    }
+  }

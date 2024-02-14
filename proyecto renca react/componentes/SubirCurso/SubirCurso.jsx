@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import './SubirCurso.css';
-import Boton from '/componentes/Boton/Boton'; 
-import Formulario from '/componentes/Formulario/Formulario';
-import Miniatura from '/componentes/Miniatura/Miniatura';
-
+import Boton from '/componentes/SubirCurso/Boton/Boton'; 
+import Formulario from '/componentes/SubirCurso/Formulario/Formulario';
+import Miniatura from '/componentes/SubirCurso/Miniatura/Miniatura';
+import ArchivosCurso from '/componentes/SubirCurso/ArchivosCurso/ArchivosCurso';
+import Subtitulos from '/componentes/SubirCurso/Subtitulos/Subtitulos';
 
 function SubirCurso() {
     const [archivosSubidos, setArchivosSubidos] = useState([]);
@@ -19,20 +20,7 @@ function SubirCurso() {
                 <h2 style={{color: '#60BDB1'}}>Subir Curso</h2>
             </div>
             <div className="grupo-1">
-                <div className="box-1">
-                    <div className="zone">
-                        <div id="dropZ">
-                            <i className="fa fa-cloud-upload custom-icon"></i>
-                            <h4>Haz click para subir el video</h4>
-                            <div className="selectFile">
-                                <label htmlFor="file">Seleccionar archivo</label>
-                                <input type="file" name="files[]" id="file" />
-                            </div>
-                            <h4>Tamaño máximo: x MB</h4>
-                        </div>
-                    </div>
-                    <h4 style={{ color:'#009A88'}}>¡Revisa que el formato sea el correcto!</h4>
-                </div>
+                <ArchivosCurso />
                 <div className="box-2">
                     <Formulario /> 
                 </div>
@@ -40,13 +28,7 @@ function SubirCurso() {
                     <div className="seccion-derecha">
                         <div className="cuadrado"></div>
                         <Miniatura />
-                        <h4 style={{ textAlign: 'left' }}>Info de tamaño y formato del archivo</h4>
-                        <h4 style={{ textAlign: 'left' }}>Añadir subtítulos</h4>
-                        <div className="selectFile">
-                            <label htmlFor="file">Seleccionar archivo</label>
-                            <input type="file" name="files[]" id="file" />
-                        </div>
-                        
+                        <Subtitulos />
                         <Boton /> 
                     </div>
                 </div>
