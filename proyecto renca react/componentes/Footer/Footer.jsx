@@ -2,9 +2,18 @@
 import './footer.css'
 
 
-const Footer = () => {
+function Footer ({location}) {
+  let color;
+
+  if (location== 'Usuario' || location == 'Principal') {
+    color = '#E95929';
+
+  } else {
+    color = '#009A88'; 
+  }
+  console.log(color);  
     return (
-      <footer className="pie-pagina">
+      <footer className="pie-pagina" style={{ backgroundColor: color}}>
         <div className="grupo-a">
           <div className="box-a">
             <figure>
