@@ -5,6 +5,7 @@ import Formulario from '/componentes/SubirCurso/Formulario/Formulario';
 import Miniatura from '/componentes/SubirCurso/Miniatura/Miniatura';
 import ArchivosCurso from '/componentes/SubirCurso/ArchivosCurso/ArchivosCurso';
 import Subtitulos from '/componentes/SubirCurso/Subtitulos/Subtitulos';
+import Footer from '/componentes/Footer/Footer'
 
 function SubirCurso() {
     const [archivosSubidos, setArchivosSubidos] = useState([]);
@@ -33,6 +34,7 @@ function SubirCurso() {
                     </div>
                 </div>
             </div>
+            <Footer />
         </main>
     );
 }
