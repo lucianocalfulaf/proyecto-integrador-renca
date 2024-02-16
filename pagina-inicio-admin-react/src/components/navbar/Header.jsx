@@ -6,7 +6,7 @@ const Header = () => {
         <header className="header">
 
             <div className="header__container">
-                <img className="header__logo" src="/src/assets/logo-renca.png" alt="Logo de Renca"/>                
+                <img className="header__logo" src="pagina-inicio-admin-react\src\assets\logo-renca.png" alt="Logo de Renca"/>                
                 <i className="fa-solid fa-right-from-bracket header__logout"></i>
             </div>
 
