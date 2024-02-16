@@ -6,6 +6,7 @@ import Miniatura from '/componentes/SubirCurso/Miniatura/Miniatura';
 import ArchivosCurso from '/componentes/SubirCurso/ArchivosCurso/ArchivosCurso';
 import Subtitulos from '/componentes/SubirCurso/Subtitulos/Subtitulos';
 import Footer from '/componentes/Footer/Footer'
+{/*import Navbar from '/componentes/Navbar/components/Container'*/}
 
 function SubirCurso() {
     const [archivosSubidos, setArchivosSubidos] = useState([]);
@@ -17,6 +18,7 @@ function SubirCurso() {
 
     return (
         <main className="container">
+              {/*<Navbar />*/}
             <div className="grupo-2">
                 <h2 style={{color: '#60BDB1'}}>Subir Curso</h2>
             </div>
