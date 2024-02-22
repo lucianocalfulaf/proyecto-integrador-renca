@@ -51,7 +51,7 @@ function Formulario() {
         />
       </div>
       <div className="form-group">
-        <label htmlFor="requisitos" className="label">Requisitos:</label>
+        <label htmlFor="requisitos" className="label">Profesor:</label>
         <input
           type="text"
           id="requisitos"
@@ -74,6 +74,7 @@ function Formulario() {
           </div>
         )}
       </div>
+      
       <div className="form-group">
         <label htmlFor="contenidos" className="label">Contenido del curso:</label>
         <textarea

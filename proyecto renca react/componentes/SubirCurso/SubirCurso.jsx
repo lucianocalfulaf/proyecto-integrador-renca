@@ -5,7 +5,8 @@ import Formulario from '/componentes/SubirCurso/Formulario/Formulario';
 import Miniatura from '/componentes/SubirCurso/Miniatura/Miniatura';
 import ArchivosCurso from '/componentes/SubirCurso/ArchivosCurso/ArchivosCurso';
 import Subtitulos from '/componentes/SubirCurso/Subtitulos/Subtitulos';
-import Footer from '/componentes/Footer/Footer'
+import Footer from '/componentes/Footer/Footer';
+import Requisito from '/componentes/SubirCurso/Requisito/Requisito';
 {/*import Navbar from '/componentes/Navbar/components/Container'*/}
 
 function SubirCurso() {
@@ -32,6 +33,7 @@ function SubirCurso() {
                         <div className="cuadrado"></div>
                         <Miniatura />
                         <Subtitulos />
+                        <Requisito /> 
                         <Boton /> 
                     </div>
                 </div>
